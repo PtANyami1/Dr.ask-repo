@@ -1,0 +1,5 @@
+{
+  "name": "MediChart: Physical Exam Recorder",
+  "description": "A streamlined medical physical examination recording tool for quick EMR charting.",
+  "requestFramePermissions": []
+}

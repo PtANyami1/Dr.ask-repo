@@ -1,0 +1,2212 @@
+[
+  {
+    "id": "cva_mental",
+    "category": "CVA",
+    "name": "Mental",
+    "type": "input",
+    "guideText": "Mental status grading",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "cva_pupil",
+    "category": "CVA",
+    "name": "Pupil",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "0",
+          "Ø"
+        ],
+        "defaultValue": "0"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "0",
+          "Ø"
+        ],
+        "defaultValue": "0"
+      }
+    ],
+    "guideText": "Pupil size and light reflex"
+  },
+  {
+    "id": "cva_babinski",
+    "category": "CVA",
+    "name": "Babinski",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Babinski reflex (Rt/Lt)"
+  },
+  {
+    "id": "cva_brudzinski",
+    "category": "CVA",
+    "name": "Brudzinski",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Brudzinski sign"
+  },
+  {
+    "id": "cva_kernig",
+    "category": "CVA",
+    "name": "Kernig",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Kernig sign"
+  },
+  {
+    "id": "cva_neck_stiffness",
+    "category": "CVA",
+    "name": "Neck stiffness",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Neck stiffness"
+  },
+  {
+    "id": "cva_headache",
+    "category": "CVA",
+    "name": "Headache",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Headache presence"
+  },
+  {
+    "id": "cva_dizziness",
+    "category": "CVA",
+    "name": "Dizziness",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dizziness presence"
+  },
+  {
+    "id": "cva_nausea_vomiting",
+    "category": "CVA",
+    "name": "Nausea/vomiting",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "nausea",
+        "label": "Nausea",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "vomiting",
+        "label": "Vomiting",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Nausea / Vomiting"
+  },
+  {
+    "id": "cva_chest_discomfort",
+    "category": "CVA",
+    "name": "Chest discomfort",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Chest discomfort"
+  },
+  {
+    "id": "cva_dysarthria",
+    "category": "CVA",
+    "name": "Dysarthria",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dysarthria"
+  },
+  {
+    "id": "cva_dysphagia",
+    "category": "CVA",
+    "name": "Dysphagia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dysphagia"
+  },
+  {
+    "id": "cva_arrhythmia",
+    "category": "CVA",
+    "name": "Arrhythmia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Arrhythmia"
+  },
+  {
+    "id": "cva_gcs",
+    "category": "CVA",
+    "name": "GCS=",
+    "type": "input",
+    "guideText": "Glasgow Coma Scale",
+    "placeholder": "15(E4 V5 M6)",
+    "defaultValue": "15(E4 V5 M6)"
+  },
+  {
+    "id": "cva_nihss",
+    "category": "CVA",
+    "name": "NIHSS=",
+    "type": "input",
+    "guideText": "NIH Stroke Scale",
+    "placeholder": "정상",
+    "defaultValue": "정상"
+  },
+  {
+    "id": "motor_power",
+    "category": "Motor & A-ROM",
+    "name": "Muscle power",
+    "type": "multi-select",
+    "subItems": [
+      {
+        "id": "upper_rt",
+        "label": "상지(Rt)",
+        "options": ["5", "4", "3", "2", "1", "0"],
+        "defaultValue": "5"
+      },
+      {
+        "id": "upper_lt",
+        "label": "상지(Lt)",
+        "options": ["5", "4", "3", "2", "1", "0"],
+        "defaultValue": "5"
+      },
+      {
+        "id": "lower_rt",
+        "label": "하지(Rt)",
+        "options": ["5", "4", "3", "2", "1", "0"],
+        "defaultValue": "5"
+      },
+      {
+        "id": "lower_lt",
+        "label": "하지(Lt)",
+        "options": ["5", "4", "3", "2", "1", "0"],
+        "defaultValue": "5"
+      }
+    ],
+    "guideText": "Upper/Lower, Rt/Lt"
+  },
+  {
+    "id": "motor_tone",
+    "category": "Motor & A-ROM",
+    "name": "Muscle tone",
+    "type": "input",
+    "guideText": "Normal, spasticity, relaxity",
+    "placeholder": "normal / normal"
+  },
+  {
+    "id": "motor_upper_elev",
+    "category": "Motor & A-ROM",
+    "name": "상지거상",
+    "type": "multi-input",
+    "subItems": [
+      { "id": "rt", "label": "Rt", "placeholder": "180" },
+      { "id": "lt", "label": "Lt", "placeholder": "180" }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_upper_rot",
+    "category": "Motor & A-ROM",
+    "name": "내/외전 (상지)",
+    "type": "multi-input",
+    "subItems": [
+      { "id": "rt", "label": "Rt", "placeholder": "75/180" },
+      { "id": "lt", "label": "Lt", "placeholder": "75/180" }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_elbow_flex",
+    "category": "Motor & A-ROM",
+    "name": "주굴",
+    "type": "multi-input",
+    "subItems": [
+      { "id": "rt", "label": "Rt", "placeholder": "150" },
+      { "id": "lt", "label": "Lt", "placeholder": "150" }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_wrist_flex",
+    "category": "Motor & A-ROM",
+    "name": "완굴",
+    "type": "multi-input",
+    "subItems": [
+      { "id": "rt", "label": "Rt", "placeholder": "80" },
+      { "id": "lt", "label": "Lt", "placeholder": "80" }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_finger_flex",
+    "category": "Motor & A-ROM",
+    "name": "수지굴신",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_finger_count",
+    "category": "Motor & A-ROM",
+    "name": "Fingercount",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_lower_elev",
+    "category": "Motor & A-ROM",
+    "name": "하지거상",
+    "type": "multi-input",
+    "subItems": [
+      { "id": "rt", "label": "Rt", "placeholder": "90" },
+      { "id": "lt", "label": "Lt", "placeholder": "90" }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_lower_rot",
+    "category": "Motor & A-ROM",
+    "name": "내/외전 (하지)",
+    "type": "multi-input",
+    "subItems": [
+      { "id": "rt", "label": "Rt", "placeholder": "30/45" },
+      { "id": "lt", "label": "Lt", "placeholder": "30/45" }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_knee_flex",
+    "category": "Motor & A-ROM",
+    "name": "슬굴",
+    "type": "multi-input",
+    "subItems": [
+      { "id": "rt", "label": "Rt", "placeholder": "135" },
+      { "id": "lt", "label": "Lt", "placeholder": "135" }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_ankle_flex",
+    "category": "Motor & A-ROM",
+    "name": "족과굴신",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_toe_flex",
+    "category": "Motor & A-ROM",
+    "name": "족지굴신",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": ["can", "can't"],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "facial_wrinkle_forehead",
+    "category": "Facial palsy",
+    "name": "Wrinkle forehead",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_blink",
+    "category": "Facial palsy",
+    "name": "Blink",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_closure_eye",
+    "category": "Facial palsy",
+    "name": "Closure of eye tightly",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_wrinkle_nose",
+    "category": "Facial palsy",
+    "name": "Wrinkle nose",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_whistle",
+    "category": "Facial palsy",
+    "name": "Whistle",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_grine",
+    "category": "Facial palsy",
+    "name": "Grine",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_depress_lip",
+    "category": "Facial palsy",
+    "name": "Depress lower lip",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "dizzy_finger_finger",
+    "category": "Dizziness",
+    "name": "Finger to finger",
+    "type": "toggle",
+    "options": [
+      "+",
+      "-"
+    ],
+    "defaultValue": "+",
+    "guideText": "Finger to finger test"
+  },
+  {
+    "id": "dizzy_finger_nose",
+    "category": "Dizziness",
+    "name": "Finger to nose",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      }
+    ],
+    "guideText": "Finger to nose test"
+  },
+  {
+    "id": "dizzy_heel_shin",
+    "category": "Dizziness",
+    "name": "Heel to shin",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      }
+    ],
+    "guideText": "Heel to shin test"
+  },
+  {
+    "id": "dizzy_dysdiadochokinesia",
+    "category": "Dizziness",
+    "name": "Dysdiadochokinesia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dysdiadochokinesia"
+  },
+  {
+    "id": "dizzy_truncal_ataxia",
+    "category": "Dizziness",
+    "name": "Truncal ataxia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Truncal ataxia"
+  },
+  {
+    "id": "dizzy_pointing",
+    "category": "Dizziness",
+    "name": "지시검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "지시검사"
+  },
+  {
+    "id": "dizzy_romberg",
+    "category": "Dizziness",
+    "name": "Romberg 검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Romberg test"
+  },
+  {
+    "id": "dizzy_rapid_turn",
+    "category": "Dizziness",
+    "name": "급속회전검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "급속회전검사"
+  },
+  {
+    "id": "dizzy_head_position",
+    "category": "Dizziness",
+    "name": "두위변화검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "두위변화검사"
+  },
+  {
+    "id": "dizzy_eye_alignment",
+    "category": "Dizziness",
+    "name": "안구의배열",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "안구의배열"
+  },
+  {
+    "id": "dizzy_saccade",
+    "category": "Dizziness",
+    "name": "단속운동",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Saccadic movement"
+  },
+  {
+    "id": "dizzy_pursuit",
+    "category": "Dizziness",
+    "name": "시추적운동",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Smooth pursuit"
+  },
+  {
+    "id": "neck_biceps",
+    "category": "Neck pain",
+    "name": "Biceps DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Biceps reflex"
+  },
+  {
+    "id": "neck_triceps",
+    "category": "Neck pain",
+    "name": "Triceps DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Triceps reflex"
+  },
+  {
+    "id": "neck_brachioradialis",
+    "category": "Neck pain",
+    "name": "Brachio-radialis DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Brachioradialis reflex"
+  },
+  {
+    "id": "neck_comp_dist",
+    "category": "Neck pain",
+    "name": "Compression/Distraction",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "comp_rt",
+        "label": "Comp(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "comp_lt",
+        "label": "Comp(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_rt",
+        "label": "Dist(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_lt",
+        "label": "Dist(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Compression/Distraction test"
+  },
+  {
+    "id": "neck_spurling",
+    "category": "Neck pain",
+    "name": "Spurling/Barre-leiou",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "spurling_rt",
+        "label": "Spurling(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "spurling_lt",
+        "label": "Spurling(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "barre_rt",
+        "label": "Barre(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "barre_lt",
+        "label": "Barre(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Spurling/Barre-leiou test"
+  },
+  {
+    "id": "neck_valsalva",
+    "category": "Neck pain",
+    "name": "Valsalva",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Valsalva test"
+  },
+  {
+    "id": "neck_adson_roos",
+    "category": "Neck pain",
+    "name": "Adson/Roos",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "adson_rt",
+        "label": "Adson(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "adson_lt",
+        "label": "Adson(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_rt",
+        "label": "Roos(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_lt",
+        "label": "Roos(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Adson/Roos test"
+  },
+  {
+    "id": "neck_flex",
+    "category": "Neck pain",
+    "name": "A-ROM Flex",
+    "type": "rom",
+    "guideText": "Flexion",
+    "subItems": [
+      {
+        "id": "flex",
+        "label": "Flex",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "neck_ext",
+    "category": "Neck pain",
+    "name": "A-ROM Ext",
+    "type": "rom",
+    "guideText": "Extension",
+    "subItems": [
+      {
+        "id": "ext",
+        "label": "Ext",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "neck_lat_flex",
+    "category": "Neck pain",
+    "name": "A-ROM Lat.flex",
+    "type": "rom",
+    "guideText": "Lateral flexion",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "45"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "neck_rot",
+    "category": "Neck pain",
+    "name": "A-ROM Rot",
+    "type": "rom",
+    "guideText": "Rotation",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "60"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "60"
+      }
+    ]
+  },
+  {
+    "id": "lbp_knee_dtr",
+    "category": "Lower back pain",
+    "name": "Knee DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Knee jerk"
+  },
+  {
+    "id": "lbp_achilles_dtr",
+    "category": "Lower back pain",
+    "name": "Achilles DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Ankle jerk"
+  },
+  {
+    "id": "lbp_slr",
+    "category": "Lower back pain",
+    "name": "SLR",
+    "type": "rom",
+    "guideText": "Straight Leg Raise",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "80"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "80"
+      }
+    ]
+  },
+  {
+    "id": "lbp_bragard",
+    "category": "Lower back pain",
+    "name": "Bragard/Lasegue/Femoral stretch",
+    "type": "multi-toggle",
+    "guideText": "Bragard/Lasegue/Femoral stretch",
+    "subItems": [
+      {
+        "id": "bragard_rt",
+        "label": "Bragard(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "bragard_lt",
+        "label": "Bragard(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lasegue_rt",
+        "label": "Lasegue(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lasegue_lt",
+        "label": "Lasegue(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "femoral_rt",
+        "label": "Femoral(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "femoral_lt",
+        "label": "Femoral(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ]
+  },
+  {
+    "id": "lbp_patrick",
+    "category": "Lower back pain",
+    "name": "Patrick/Thomas",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "patrick_rt",
+        "label": "Patrick(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "patrick_lt",
+        "label": "Patrick(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "thomas_rt",
+        "label": "Thomas(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "thomas_lt",
+        "label": "Thomas(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Patrick/Thomas test"
+  },
+  {
+    "id": "lbp_milgram",
+    "category": "Lower back pain",
+    "name": "Milgram",
+    "type": "input",
+    "guideText": "Milgram test",
+    "placeholder": ""
+  },
+  {
+    "id": "lbp_sensory",
+    "category": "Lower back pain",
+    "name": "Sensory change",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Sensory change"
+  },
+  {
+    "id": "lbp_flex",
+    "category": "Lower back pain",
+    "name": "A-ROM Flex",
+    "type": "rom",
+    "guideText": "Flexion",
+    "subItems": [
+      {
+        "id": "flex",
+        "label": "Flex",
+        "placeholder": "80"
+      }
+    ]
+  },
+  {
+    "id": "lbp_ext",
+    "category": "Lower back pain",
+    "name": "A-ROM Ext",
+    "type": "rom",
+    "guideText": "Extension",
+    "subItems": [
+      {
+        "id": "ext",
+        "label": "Ext",
+        "placeholder": "20"
+      }
+    ]
+  },
+  {
+    "id": "lbp_lat_flex",
+    "category": "Lower back pain",
+    "name": "A-ROM Lat.flex",
+    "type": "rom",
+    "guideText": "Lateral flexion",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "35"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "35"
+      }
+    ]
+  },
+  {
+    "id": "lbp_rot",
+    "category": "Lower back pain",
+    "name": "A-ROM Rot",
+    "type": "rom",
+    "guideText": "Rotation",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "45"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "shoulder_apley1",
+    "category": "Shoulder pain",
+    "name": "Apley 1",
+    "type": "rom",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "T7"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "T7"
+      }
+    ],
+    "guideText": "Apley scratch test 1"
+  },
+  {
+    "id": "shoulder_apley2",
+    "category": "Shoulder pain",
+    "name": "Apley 2",
+    "type": "rom",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "T7"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "T7"
+      }
+    ],
+    "guideText": "Apley scratch test 2"
+  },
+  {
+    "id": "shoulder_drop_arm",
+    "category": "Shoulder pain",
+    "name": "Drop arm/Empty can",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "drop_rt",
+        "label": "Drop arm(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "drop_lt",
+        "label": "Drop arm(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "empty_rt",
+        "label": "Empty can(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "empty_lt",
+        "label": "Empty can(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Drop arm / Empty can test"
+  },
+  {
+    "id": "shoulder_yergason",
+    "category": "Shoulder pain",
+    "name": "Yergason",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Yergason test"
+  },
+  {
+    "id": "shoulder_adson",
+    "category": "Shoulder pain",
+    "name": "Adson/Roos",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "adson_rt",
+        "label": "Adson(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "adson_lt",
+        "label": "Adson(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_rt",
+        "label": "Roos(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_lt",
+        "label": "Roos(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Adson / Roos test"
+  },
+  {
+    "id": "shoulder_flex_ext",
+    "category": "Shoulder pain",
+    "name": "A-ROM Flex/Ext",
+    "type": "rom",
+    "guideText": "Flexion / Extension",
+    "subItems": [
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "60"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "60"
+      }
+    ]
+  },
+  {
+    "id": "shoulder_abd_add",
+    "category": "Shoulder pain",
+    "name": "A-ROM Abd/Add",
+    "type": "rom",
+    "guideText": "Abduction / Adduction",
+    "subItems": [
+      {
+        "id": "abd_rt",
+        "label": "Abd(Rt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "abd_lt",
+        "label": "Abd(Lt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "add_rt",
+        "label": "Add(Rt)",
+        "placeholder": "75"
+      },
+      {
+        "id": "add_lt",
+        "label": "Add(Lt)",
+        "placeholder": "75"
+      }
+    ]
+  },
+  {
+    "id": "shoulder_rot",
+    "category": "Shoulder pain",
+    "name": "A-ROM Int.rot/Ext.rot",
+    "type": "rom",
+    "guideText": "Internal / External rotation",
+    "subItems": [
+      {
+        "id": "int_rt",
+        "label": "Int(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "int_lt",
+        "label": "Int(Lt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "90"
+      }
+    ]
+  },
+  {
+    "id": "shoulder_mmt",
+    "category": "Shoulder pain",
+    "name": "MMT",
+    "type": "input",
+    "guideText": "Manual Muscle Testing",
+    "placeholder": "Gr5"
+  },
+  {
+    "id": "elbow_tennis",
+    "category": "Elbow pain",
+    "name": "Tennis/Golfer's elbow test",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "tennis_rt",
+        "label": "Tennis(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "tennis_lt",
+        "label": "Tennis(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "golfer_rt",
+        "label": "Golfer(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "golfer_lt",
+        "label": "Golfer(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Tennis / Golfer's elbow test"
+  },
+  {
+    "id": "elbow_flex",
+    "category": "Elbow pain",
+    "name": "A-ROM Flex",
+    "type": "rom",
+    "guideText": "Flexion",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "150"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "150"
+      }
+    ]
+  },
+  {
+    "id": "elbow_mmt",
+    "category": "Elbow pain",
+    "name": "MMT",
+    "type": "input",
+    "guideText": "Manual Muscle Testing",
+    "placeholder": "Gr5"
+  },
+  {
+    "id": "wrist_finkelstein",
+    "category": "Wrist pain",
+    "name": "Finkelstein",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Finkelstein test"
+  },
+  {
+    "id": "wrist_tinel",
+    "category": "Wrist pain",
+    "name": "Tinel/Phalen",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "tinel_rt",
+        "label": "Tinel(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "tinel_lt",
+        "label": "Tinel(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "phalen_rt",
+        "label": "Phalen(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "phalen_lt",
+        "label": "Phalen(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Tinel / Phalen test"
+  },
+  {
+    "id": "wrist_ext_flex",
+    "category": "Wrist pain",
+    "name": "A-ROM Ext/Flex",
+    "type": "rom",
+    "guideText": "Extension / Flexion",
+    "subItems": [
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "70"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "70"
+      },
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "80"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "80"
+      }
+    ]
+  },
+  {
+    "id": "wrist_rad_ulnar",
+    "category": "Wrist pain",
+    "name": "A-ROM Radial/Ulnar",
+    "type": "rom",
+    "guideText": "Radial / Ulnar deviation",
+    "subItems": [
+      {
+        "id": "rad_rt",
+        "label": "Rad(Rt)",
+        "placeholder": "15"
+      },
+      {
+        "id": "rad_lt",
+        "label": "Rad(Lt)",
+        "placeholder": "15"
+      },
+      {
+        "id": "uln_rt",
+        "label": "Ulnar(Rt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "uln_lt",
+        "label": "Ulnar(Lt)",
+        "placeholder": "30"
+      }
+    ]
+  },
+  {
+    "id": "wrist_sup_pro",
+    "category": "Wrist pain",
+    "name": "A-ROM Sup/Pro",
+    "type": "rom",
+    "guideText": "Supination / Pronation",
+    "subItems": [
+      {
+        "id": "sup_rt",
+        "label": "Sup(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "sup_lt",
+        "label": "Sup(Lt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "pro_rt",
+        "label": "Pro(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "pro_lt",
+        "label": "Pro(Lt)",
+        "placeholder": "90"
+      }
+    ]
+  },
+  {
+    "id": "hip_thomas",
+    "category": "Hip joint pain",
+    "name": "Thomas/Patrick",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "thomas_rt",
+        "label": "Thomas(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "thomas_lt",
+        "label": "Thomas(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "patrick_rt",
+        "label": "Patrick(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "patrick_lt",
+        "label": "Patrick(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Thomas / Patrick test"
+  },
+  {
+    "id": "hip_smd_umd",
+    "category": "Hip joint pain",
+    "name": "SMD/UMD",
+    "type": "input",
+    "guideText": "SMD / UMD",
+    "placeholder": "79/87 80/88"
+  },
+  {
+    "id": "hip_trendelenburg",
+    "category": "Hip joint pain",
+    "name": "Trendelenburg",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Trendelenburg sign"
+  },
+  {
+    "id": "hip_flex_ext",
+    "category": "Hip joint pain",
+    "name": "A-ROM Flex/Ext",
+    "type": "rom",
+    "guideText": "Flexion / Extension",
+    "subItems": [
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "30"
+      }
+    ]
+  },
+  {
+    "id": "hip_add_abd",
+    "category": "Hip joint pain",
+    "name": "A-ROM Add/Abd",
+    "type": "rom",
+    "guideText": "Adduction / Abduction",
+    "subItems": [
+      {
+        "id": "add_rt",
+        "label": "Add(Rt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "add_lt",
+        "label": "Add(Lt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "abd_rt",
+        "label": "Abd(Rt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "abd_lt",
+        "label": "Abd(Lt)",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "hip_rot",
+    "category": "Hip joint pain",
+    "name": "A-ROM Int.rot/Ext.rot",
+    "type": "rom",
+    "guideText": "Internal / External rotation",
+    "subItems": [
+      {
+        "id": "int_rt",
+        "label": "Int(Rt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "int_lt",
+        "label": "Int(Lt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "35"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "35"
+      }
+    ]
+  },
+  {
+    "id": "hip_mmt",
+    "category": "Hip joint pain",
+    "name": "MMT",
+    "type": "input",
+    "guideText": "Manual Muscle Testing",
+    "placeholder": "Gr5"
+  },
+  {
+    "id": "knee_bulge",
+    "category": "Knee pain",
+    "name": "Bulge sign",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Bulge sign"
+  },
+  {
+    "id": "knee_mcmurray",
+    "category": "Knee pain",
+    "name": "Mcmurray/Apley's compression",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "mcmurray_rt",
+        "label": "Mcmurray(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "mcmurray_lt",
+        "label": "Mcmurray(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "apley_rt",
+        "label": "Apley(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "apley_lt",
+        "label": "Apley(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Mcmurray / Apley's compression"
+  },
+  {
+    "id": "knee_drawer",
+    "category": "Knee pain",
+    "name": "Drawer/Apley's distraction/Lachman",
+    "type": "multi-toggle",
+    "guideText": "Drawer / Apley's distraction / Lachman",
+    "subItems": [
+      {
+        "id": "drawer_rt",
+        "label": "Drawer(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "drawer_lt",
+        "label": "Drawer(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_rt",
+        "label": "Distraction(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_lt",
+        "label": "Distraction(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lachman_rt",
+        "label": "Lachman(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lachman_lt",
+        "label": "Lachman(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ]
+  },
+  {
+    "id": "knee_stress",
+    "category": "Knee pain",
+    "name": "Varus/Valgus stress",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "varus_rt",
+        "label": "Varus(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "varus_lt",
+        "label": "Varus(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "valgus_rt",
+        "label": "Valgus(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "valgus_lt",
+        "label": "Valgus(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Varus / Valgus stress"
+  },
+  {
+    "id": "knee_flex_ext",
+    "category": "Knee pain",
+    "name": "A-ROM Flex/Ext",
+    "type": "rom",
+    "guideText": "Flexion / Extension",
+    "subItems": [
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "0"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "0"
+      }
+    ]
+  },
+  {
+    "id": "ankle_ottawa",
+    "category": "Ankle pain",
+    "name": "Ottawa rule",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Ottawa ankle rules"
+  },
+  {
+    "id": "ankle_drawer",
+    "category": "Ankle pain",
+    "name": "Drawer's sign",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Ankle drawer sign"
+  },
+  {
+    "id": "ankle_dorsi_plantar",
+    "category": "Ankle pain",
+    "name": "A-ROM Dorsi/Plantar flexion",
+    "type": "rom",
+    "guideText": "Dorsiflexion / Plantarflexion",
+    "subItems": [
+      {
+        "id": "dorsi_rt",
+        "label": "Dorsi(Rt)",
+        "placeholder": "20"
+      },
+      {
+        "id": "dorsi_lt",
+        "label": "Dorsi(Lt)",
+        "placeholder": "20"
+      },
+      {
+        "id": "plantar_rt",
+        "label": "Plantar(Rt)",
+        "placeholder": "50"
+      },
+      {
+        "id": "plantar_lt",
+        "label": "Plantar(Lt)",
+        "placeholder": "50"
+      }
+    ]
+  },
+  {
+    "id": "ankle_inv_ev",
+    "category": "Ankle pain",
+    "name": "A-ROM Inversion/Eversion",
+    "type": "rom",
+    "guideText": "Inversion / Eversion",
+    "subItems": [
+      {
+        "id": "inv_rt",
+        "label": "Inv(Rt)",
+        "placeholder": "35"
+      },
+      {
+        "id": "inv_lt",
+        "label": "Inv(Lt)",
+        "placeholder": "35"
+      },
+      {
+        "id": "ev_rt",
+        "label": "Ev(Rt)",
+        "placeholder": "25"
+      },
+      {
+        "id": "ev_lt",
+        "label": "Ev(Lt)",
+        "placeholder": "25"
+      }
+    ]
+  }
+]
