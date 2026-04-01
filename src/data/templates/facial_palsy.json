@@ -1,0 +1,58 @@
+[
+  {
+    "id": "facial_wrinkle_forehead",
+    "category": "Facial palsy",
+    "name": "Wrinkle forehead",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_blink",
+    "category": "Facial palsy",
+    "name": "Blink",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_closure_eye",
+    "category": "Facial palsy",
+    "name": "Closure of eye tightly",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_wrinkle_nose",
+    "category": "Facial palsy",
+    "name": "Wrinkle nose",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_whistle",
+    "category": "Facial palsy",
+    "name": "Whistle",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_grine",
+    "category": "Facial palsy",
+    "name": "Grine",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "facial_depress_lip",
+    "category": "Facial palsy",
+    "name": "Depress lower lip",
+    "type": "input",
+    "guideText": "Grade",
+    "placeholder": "Gr"
+  }
+]

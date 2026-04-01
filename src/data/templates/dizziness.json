@@ -1,0 +1,176 @@
+[
+  {
+    "id": "dizzy_finger_finger",
+    "category": "Dizziness",
+    "name": "Finger to finger",
+    "type": "toggle",
+    "options": [
+      "+",
+      "-"
+    ],
+    "defaultValue": "+",
+    "guideText": "Finger to finger test"
+  },
+  {
+    "id": "dizzy_finger_nose",
+    "category": "Dizziness",
+    "name": "Finger to nose",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      }
+    ],
+    "guideText": "Finger to nose test"
+  },
+  {
+    "id": "dizzy_heel_shin",
+    "category": "Dizziness",
+    "name": "Heel to shin",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "+",
+          "-"
+        ],
+        "defaultValue": "+"
+      }
+    ],
+    "guideText": "Heel to shin test"
+  },
+  {
+    "id": "dizzy_dysdiadochokinesia",
+    "category": "Dizziness",
+    "name": "Dysdiadochokinesia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dysdiadochokinesia"
+  },
+  {
+    "id": "dizzy_truncal_ataxia",
+    "category": "Dizziness",
+    "name": "Truncal ataxia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Truncal ataxia"
+  },
+  {
+    "id": "dizzy_pointing",
+    "category": "Dizziness",
+    "name": "지시검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "지시검사"
+  },
+  {
+    "id": "dizzy_romberg",
+    "category": "Dizziness",
+    "name": "Romberg 검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Romberg test"
+  },
+  {
+    "id": "dizzy_rapid_turn",
+    "category": "Dizziness",
+    "name": "급속회전검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "급속회전검사"
+  },
+  {
+    "id": "dizzy_head_position",
+    "category": "Dizziness",
+    "name": "두위변화검사",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "두위변화검사"
+  },
+  {
+    "id": "dizzy_eye_alignment",
+    "category": "Dizziness",
+    "name": "안구의배열",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "안구의배열"
+  },
+  {
+    "id": "dizzy_saccade",
+    "category": "Dizziness",
+    "name": "단속운동",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Saccadic movement"
+  },
+  {
+    "id": "dizzy_pursuit",
+    "category": "Dizziness",
+    "name": "시추적운동",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Smooth pursuit"
+  }
+]

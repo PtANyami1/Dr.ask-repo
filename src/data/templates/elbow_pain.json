@@ -1,0 +1,74 @@
+[
+  {
+    "id": "elbow_tennis",
+    "category": "Elbow pain",
+    "name": "Tennis/Golfer's elbow test",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "tennis_rt",
+        "label": "Tennis(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "tennis_lt",
+        "label": "Tennis(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "golfer_rt",
+        "label": "Golfer(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "golfer_lt",
+        "label": "Golfer(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Tennis / Golfer's elbow test"
+  },
+  {
+    "id": "elbow_flex",
+    "category": "Elbow pain",
+    "name": "A-ROM Flex",
+    "type": "rom",
+    "guideText": "Flexion",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "150"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "150"
+      }
+    ]
+  },
+  {
+    "id": "elbow_mmt",
+    "category": "Elbow pain",
+    "name": "MMT",
+    "type": "input",
+    "guideText": "Manual Muscle Testing",
+    "placeholder": "Gr5"
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "id": "cva_mental",
+    "category": "CVA",
+    "name": "Mental",
+    "type": "input",
+    "guideText": "Mental status grading",
+    "placeholder": "Gr"
+  },
+  {
+    "id": "cva_pupil",
+    "category": "CVA",
+    "name": "Pupil",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "0",
+          "Ø"
+        ],
+        "defaultValue": "0"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "0",
+          "Ø"
+        ],
+        "defaultValue": "0"
+      }
+    ],
+    "guideText": "Pupil size and light reflex"
+  },
+  {
+    "id": "cva_babinski",
+    "category": "CVA",
+    "name": "Babinski",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Babinski reflex (Rt/Lt)"
+  },
+  {
+    "id": "cva_brudzinski",
+    "category": "CVA",
+    "name": "Brudzinski",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Brudzinski sign"
+  },
+  {
+    "id": "cva_kernig",
+    "category": "CVA",
+    "name": "Kernig",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Kernig sign"
+  },
+  {
+    "id": "cva_neck_stiffness",
+    "category": "CVA",
+    "name": "Neck stiffness",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Neck stiffness"
+  },
+  {
+    "id": "cva_headache",
+    "category": "CVA",
+    "name": "Headache",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Headache presence"
+  },
+  {
+    "id": "cva_dizziness",
+    "category": "CVA",
+    "name": "Dizziness",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dizziness presence"
+  },
+  {
+    "id": "cva_nausea_vomiting",
+    "category": "CVA",
+    "name": "Nausea/vomiting",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "nausea",
+        "label": "Nausea",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "vomiting",
+        "label": "Vomiting",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Nausea / Vomiting"
+  },
+  {
+    "id": "cva_chest_discomfort",
+    "category": "CVA",
+    "name": "Chest discomfort",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Chest discomfort"
+  },
+  {
+    "id": "cva_dysarthria",
+    "category": "CVA",
+    "name": "Dysarthria",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dysarthria"
+  },
+  {
+    "id": "cva_dysphagia",
+    "category": "CVA",
+    "name": "Dysphagia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Dysphagia"
+  },
+  {
+    "id": "cva_arrhythmia",
+    "category": "CVA",
+    "name": "Arrhythmia",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Arrhythmia"
+  },
+  {
+    "id": "cva_gcs",
+    "category": "CVA",
+    "name": "GCS=",
+    "type": "input",
+    "guideText": "Glasgow Coma Scale",
+    "placeholder": "15(E4 V5 M6)",
+    "defaultValue": "15(E4 V5 M6)"
+  },
+  {
+    "id": "cva_nihss",
+    "category": "CVA",
+    "name": "NIHSS=",
+    "type": "input",
+    "guideText": "NIH Stroke Scale",
+    "placeholder": "정상",
+    "defaultValue": "정상"
+  }
+]

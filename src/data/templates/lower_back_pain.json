@@ -1,0 +1,288 @@
+[
+  {
+    "id": "lbp_knee_dtr",
+    "category": "Lower back pain",
+    "name": "Knee DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Knee jerk"
+  },
+  {
+    "id": "lbp_achilles_dtr",
+    "category": "Lower back pain",
+    "name": "Achilles DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Ankle jerk"
+  },
+  {
+    "id": "lbp_slr",
+    "category": "Lower back pain",
+    "name": "SLR",
+    "type": "rom",
+    "guideText": "Straight Leg Raise",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "80"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "80"
+      }
+    ]
+  },
+  {
+    "id": "lbp_bragard",
+    "category": "Lower back pain",
+    "name": "Bragard/Lasegue/Femoral stretch",
+    "type": "multi-toggle",
+    "guideText": "Bragard/Lasegue/Femoral stretch",
+    "subItems": [
+      {
+        "id": "bragard_rt",
+        "label": "Bragard(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "bragard_lt",
+        "label": "Bragard(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lasegue_rt",
+        "label": "Lasegue(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lasegue_lt",
+        "label": "Lasegue(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "femoral_rt",
+        "label": "Femoral(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "femoral_lt",
+        "label": "Femoral(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ]
+  },
+  {
+    "id": "lbp_patrick",
+    "category": "Lower back pain",
+    "name": "Patrick/Thomas",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "patrick_rt",
+        "label": "Patrick(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "patrick_lt",
+        "label": "Patrick(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "thomas_rt",
+        "label": "Thomas(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "thomas_lt",
+        "label": "Thomas(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Patrick/Thomas test"
+  },
+  {
+    "id": "lbp_milgram",
+    "category": "Lower back pain",
+    "name": "Milgram",
+    "type": "input",
+    "guideText": "Milgram test",
+    "placeholder": ""
+  },
+  {
+    "id": "lbp_sensory",
+    "category": "Lower back pain",
+    "name": "Sensory change",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Sensory change"
+  },
+  {
+    "id": "lbp_flex",
+    "category": "Lower back pain",
+    "name": "A-ROM Flex",
+    "type": "rom",
+    "guideText": "Flexion",
+    "subItems": [
+      {
+        "id": "flex",
+        "label": "Flex",
+        "placeholder": "80"
+      }
+    ]
+  },
+  {
+    "id": "lbp_ext",
+    "category": "Lower back pain",
+    "name": "A-ROM Ext",
+    "type": "rom",
+    "guideText": "Extension",
+    "subItems": [
+      {
+        "id": "ext",
+        "label": "Ext",
+        "placeholder": "20"
+      }
+    ]
+  },
+  {
+    "id": "lbp_lat_flex",
+    "category": "Lower back pain",
+    "name": "A-ROM Lat.flex",
+    "type": "rom",
+    "guideText": "Lateral flexion",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "35"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "35"
+      }
+    ]
+  },
+  {
+    "id": "lbp_rot",
+    "category": "Lower back pain",
+    "name": "A-ROM Rot",
+    "type": "rom",
+    "guideText": "Rotation",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "45"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "45"
+      }
+    ]
+  }
+]

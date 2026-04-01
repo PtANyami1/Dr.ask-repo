@@ -1,0 +1,252 @@
+[
+  {
+    "id": "shoulder_apley1",
+    "category": "Shoulder pain",
+    "name": "Apley 1",
+    "type": "rom",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "T7"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "T7"
+      }
+    ],
+    "guideText": "Apley scratch test 1"
+  },
+  {
+    "id": "shoulder_apley2",
+    "category": "Shoulder pain",
+    "name": "Apley 2",
+    "type": "rom",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "T7"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "T7"
+      }
+    ],
+    "guideText": "Apley scratch test 2"
+  },
+  {
+    "id": "shoulder_drop_arm",
+    "category": "Shoulder pain",
+    "name": "Drop arm/Empty can",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "drop_rt",
+        "label": "Drop arm(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "drop_lt",
+        "label": "Drop arm(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "empty_rt",
+        "label": "Empty can(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "empty_lt",
+        "label": "Empty can(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Drop arm / Empty can test"
+  },
+  {
+    "id": "shoulder_yergason",
+    "category": "Shoulder pain",
+    "name": "Yergason",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Yergason test"
+  },
+  {
+    "id": "shoulder_adson",
+    "category": "Shoulder pain",
+    "name": "Adson/Roos",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "adson_rt",
+        "label": "Adson(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "adson_lt",
+        "label": "Adson(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_rt",
+        "label": "Roos(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_lt",
+        "label": "Roos(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Adson / Roos test"
+  },
+  {
+    "id": "shoulder_flex_ext",
+    "category": "Shoulder pain",
+    "name": "A-ROM Flex/Ext",
+    "type": "rom",
+    "guideText": "Flexion / Extension",
+    "subItems": [
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "60"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "60"
+      }
+    ]
+  },
+  {
+    "id": "shoulder_abd_add",
+    "category": "Shoulder pain",
+    "name": "A-ROM Abd/Add",
+    "type": "rom",
+    "guideText": "Abduction / Adduction",
+    "subItems": [
+      {
+        "id": "abd_rt",
+        "label": "Abd(Rt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "abd_lt",
+        "label": "Abd(Lt)",
+        "placeholder": "180"
+      },
+      {
+        "id": "add_rt",
+        "label": "Add(Rt)",
+        "placeholder": "75"
+      },
+      {
+        "id": "add_lt",
+        "label": "Add(Lt)",
+        "placeholder": "75"
+      }
+    ]
+  },
+  {
+    "id": "shoulder_rot",
+    "category": "Shoulder pain",
+    "name": "A-ROM Int.rot/Ext.rot",
+    "type": "rom",
+    "guideText": "Internal / External rotation",
+    "subItems": [
+      {
+        "id": "int_rt",
+        "label": "Int(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "int_lt",
+        "label": "Int(Lt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "90"
+      }
+    ]
+  },
+  {
+    "id": "shoulder_mmt",
+    "category": "Shoulder pain",
+    "name": "MMT",
+    "type": "input",
+    "guideText": "Manual Muscle Testing",
+    "placeholder": "Gr5"
+  }
+]

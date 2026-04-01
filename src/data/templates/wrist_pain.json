@@ -1,0 +1,161 @@
+[
+  {
+    "id": "wrist_finkelstein",
+    "category": "Wrist pain",
+    "name": "Finkelstein",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Finkelstein test"
+  },
+  {
+    "id": "wrist_tinel",
+    "category": "Wrist pain",
+    "name": "Tinel/Phalen",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "tinel_rt",
+        "label": "Tinel(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "tinel_lt",
+        "label": "Tinel(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "phalen_rt",
+        "label": "Phalen(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "phalen_lt",
+        "label": "Phalen(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Tinel / Phalen test"
+  },
+  {
+    "id": "wrist_ext_flex",
+    "category": "Wrist pain",
+    "name": "A-ROM Ext/Flex",
+    "type": "rom",
+    "guideText": "Extension / Flexion",
+    "subItems": [
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "70"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "70"
+      },
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "80"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "80"
+      }
+    ]
+  },
+  {
+    "id": "wrist_rad_ulnar",
+    "category": "Wrist pain",
+    "name": "A-ROM Radial/Ulnar",
+    "type": "rom",
+    "guideText": "Radial / Ulnar deviation",
+    "subItems": [
+      {
+        "id": "rad_rt",
+        "label": "Rad(Rt)",
+        "placeholder": "15"
+      },
+      {
+        "id": "rad_lt",
+        "label": "Rad(Lt)",
+        "placeholder": "15"
+      },
+      {
+        "id": "uln_rt",
+        "label": "Ulnar(Rt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "uln_lt",
+        "label": "Ulnar(Lt)",
+        "placeholder": "30"
+      }
+    ]
+  },
+  {
+    "id": "wrist_sup_pro",
+    "category": "Wrist pain",
+    "name": "A-ROM Sup/Pro",
+    "type": "rom",
+    "guideText": "Supination / Pronation",
+    "subItems": [
+      {
+        "id": "sup_rt",
+        "label": "Sup(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "sup_lt",
+        "label": "Sup(Lt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "pro_rt",
+        "label": "Pro(Rt)",
+        "placeholder": "90"
+      },
+      {
+        "id": "pro_lt",
+        "label": "Pro(Lt)",
+        "placeholder": "90"
+      }
+    ]
+  }
+]

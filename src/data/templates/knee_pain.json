@@ -1,0 +1,211 @@
+[
+  {
+    "id": "knee_bulge",
+    "category": "Knee pain",
+    "name": "Bulge sign",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Bulge sign"
+  },
+  {
+    "id": "knee_mcmurray",
+    "category": "Knee pain",
+    "name": "Mcmurray/Apley's compression",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "mcmurray_rt",
+        "label": "Mcmurray(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "mcmurray_lt",
+        "label": "Mcmurray(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "apley_rt",
+        "label": "Apley(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "apley_lt",
+        "label": "Apley(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Mcmurray / Apley's compression"
+  },
+  {
+    "id": "knee_drawer",
+    "category": "Knee pain",
+    "name": "Drawer/Apley's distraction/Lachman",
+    "type": "multi-toggle",
+    "guideText": "Drawer / Apley's distraction / Lachman",
+    "subItems": [
+      {
+        "id": "drawer_rt",
+        "label": "Drawer(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "drawer_lt",
+        "label": "Drawer(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_rt",
+        "label": "Distraction(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_lt",
+        "label": "Distraction(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lachman_rt",
+        "label": "Lachman(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lachman_lt",
+        "label": "Lachman(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ]
+  },
+  {
+    "id": "knee_stress",
+    "category": "Knee pain",
+    "name": "Varus/Valgus stress",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "varus_rt",
+        "label": "Varus(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "varus_lt",
+        "label": "Varus(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "valgus_rt",
+        "label": "Valgus(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "valgus_lt",
+        "label": "Valgus(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Varus / Valgus stress"
+  },
+  {
+    "id": "knee_flex_ext",
+    "category": "Knee pain",
+    "name": "A-ROM Flex/Ext",
+    "type": "rom",
+    "guideText": "Flexion / Extension",
+    "subItems": [
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "0"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "0"
+      }
+    ]
+  }
+]

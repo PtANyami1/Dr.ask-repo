@@ -1,0 +1,302 @@
+[
+  {
+    "id": "neck_biceps",
+    "category": "Neck pain",
+    "name": "Biceps DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Biceps reflex"
+  },
+  {
+    "id": "neck_triceps",
+    "category": "Neck pain",
+    "name": "Triceps DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Triceps reflex"
+  },
+  {
+    "id": "neck_brachioradialis",
+    "category": "Neck pain",
+    "name": "Brachio-radialis DTR",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "++",
+          "+",
+          "-"
+        ],
+        "defaultValue": "++"
+      }
+    ],
+    "guideText": "Brachioradialis reflex"
+  },
+  {
+    "id": "neck_comp_dist",
+    "category": "Neck pain",
+    "name": "Compression/Distraction",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "comp_rt",
+        "label": "Comp(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "comp_lt",
+        "label": "Comp(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_rt",
+        "label": "Dist(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "dist_lt",
+        "label": "Dist(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Compression/Distraction test"
+  },
+  {
+    "id": "neck_spurling",
+    "category": "Neck pain",
+    "name": "Spurling/Barre-leiou",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "spurling_rt",
+        "label": "Spurling(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "spurling_lt",
+        "label": "Spurling(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "barre_rt",
+        "label": "Barre(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "barre_lt",
+        "label": "Barre(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Spurling/Barre-leiou test"
+  },
+  {
+    "id": "neck_valsalva",
+    "category": "Neck pain",
+    "name": "Valsalva",
+    "type": "toggle",
+    "options": [
+      "-",
+      "+"
+    ],
+    "defaultValue": "-",
+    "guideText": "Valsalva test"
+  },
+  {
+    "id": "neck_adson_roos",
+    "category": "Neck pain",
+    "name": "Adson/Roos",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "adson_rt",
+        "label": "Adson(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "adson_lt",
+        "label": "Adson(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_rt",
+        "label": "Roos(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "roos_lt",
+        "label": "Roos(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Adson/Roos test"
+  },
+  {
+    "id": "neck_flex",
+    "category": "Neck pain",
+    "name": "A-ROM Flex",
+    "type": "rom",
+    "guideText": "Flexion",
+    "subItems": [
+      {
+        "id": "flex",
+        "label": "Flex",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "neck_ext",
+    "category": "Neck pain",
+    "name": "A-ROM Ext",
+    "type": "rom",
+    "guideText": "Extension",
+    "subItems": [
+      {
+        "id": "ext",
+        "label": "Ext",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "neck_lat_flex",
+    "category": "Neck pain",
+    "name": "A-ROM Lat.flex",
+    "type": "rom",
+    "guideText": "Lateral flexion",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "45"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "neck_rot",
+    "category": "Neck pain",
+    "name": "A-ROM Rot",
+    "type": "rom",
+    "guideText": "Rotation",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "60"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "60"
+      }
+    ]
+  }
+]

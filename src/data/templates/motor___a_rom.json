@@ -1,0 +1,312 @@
+[
+  {
+    "id": "motor_power",
+    "category": "Motor & A-ROM",
+    "name": "Muscle power",
+    "type": "multi-select",
+    "subItems": [
+      {
+        "id": "upper_rt",
+        "label": "상지(Rt)",
+        "options": [
+          "5",
+          "4",
+          "3",
+          "2",
+          "1",
+          "0"
+        ],
+        "defaultValue": "5"
+      },
+      {
+        "id": "upper_lt",
+        "label": "상지(Lt)",
+        "options": [
+          "5",
+          "4",
+          "3",
+          "2",
+          "1",
+          "0"
+        ],
+        "defaultValue": "5"
+      },
+      {
+        "id": "lower_rt",
+        "label": "하지(Rt)",
+        "options": [
+          "5",
+          "4",
+          "3",
+          "2",
+          "1",
+          "0"
+        ],
+        "defaultValue": "5"
+      },
+      {
+        "id": "lower_lt",
+        "label": "하지(Lt)",
+        "options": [
+          "5",
+          "4",
+          "3",
+          "2",
+          "1",
+          "0"
+        ],
+        "defaultValue": "5"
+      }
+    ],
+    "guideText": "Upper/Lower, Rt/Lt"
+  },
+  {
+    "id": "motor_tone",
+    "category": "Motor & A-ROM",
+    "name": "Muscle tone",
+    "type": "input",
+    "guideText": "Normal, spasticity, relaxity",
+    "placeholder": "normal / normal"
+  },
+  {
+    "id": "motor_upper_elev",
+    "category": "Motor & A-ROM",
+    "name": "상지거상",
+    "type": "multi-input",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "180"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "180"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_upper_rot",
+    "category": "Motor & A-ROM",
+    "name": "내/외전 (상지)",
+    "type": "multi-input",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "75/180"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "75/180"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_elbow_flex",
+    "category": "Motor & A-ROM",
+    "name": "주굴",
+    "type": "multi-input",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "150"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "150"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_wrist_flex",
+    "category": "Motor & A-ROM",
+    "name": "완굴",
+    "type": "multi-input",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "80"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "80"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_finger_flex",
+    "category": "Motor & A-ROM",
+    "name": "수지굴신",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_finger_count",
+    "category": "Motor & A-ROM",
+    "name": "Fingercount",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_lower_elev",
+    "category": "Motor & A-ROM",
+    "name": "하지거상",
+    "type": "multi-input",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "90"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "90"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_lower_rot",
+    "category": "Motor & A-ROM",
+    "name": "내/외전 (하지)",
+    "type": "multi-input",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "30/45"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "30/45"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_knee_flex",
+    "category": "Motor & A-ROM",
+    "name": "슬굴",
+    "type": "multi-input",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "placeholder": "135"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "placeholder": "135"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_ankle_flex",
+    "category": "Motor & A-ROM",
+    "name": "족과굴신",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  },
+  {
+    "id": "motor_toe_flex",
+    "category": "Motor & A-ROM",
+    "name": "족지굴신",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "can",
+          "can't"
+        ],
+        "defaultValue": "can"
+      }
+    ],
+    "guideText": "Rt / Lt"
+  }
+]

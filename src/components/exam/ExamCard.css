@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer components {
+  .exam-card {
+    @apply bg-white rounded-lg p-2.5 border transition-all duration-200 flex flex-col border-slate-200 shadow-sm h-fit self-start w-full;
+  }
+  
+  .exam-card.changed {
+    @apply border-blue-400 ring-1 ring-blue-100 shadow-sm;
+  }
+
+  .exam-card-title {
+    @apply font-bold text-xs text-slate-800 flex items-center gap-1 leading-tight;
+  }
+
+  .subitem-label {
+    @apply text-[10px] text-slate-600 font-medium truncate;
+  }
+
+  .select-input {
+    @apply px-2 py-1 rounded border border-slate-200 text-xs font-medium focus:outline-none focus:ring-1 focus:ring-blue-500/20 bg-slate-50 text-slate-700;
+  }
+
+  .multi-toggle-container {
+    @apply flex rounded overflow-hidden border border-slate-200 shrink-0;
+  }
+
+  .multi-toggle-btn {
+    @apply px-2 py-1 text-[10px] font-medium transition-all bg-slate-50 text-slate-600 hover:bg-slate-100 border-r border-slate-200 last:border-r-0;
+  }
+
+  .multi-toggle-btn.active {
+    @apply bg-blue-600 text-white;
+  }
+
+  .text-input {
+    @apply w-full px-2 py-1.5 rounded border border-slate-200 text-xs font-medium focus:outline-none focus:ring-1 focus:ring-blue-500/20 bg-slate-50;
+  }
+
+  .text-input.changed {
+    @apply border-blue-300 bg-blue-50/30;
+  }
+
+  .pain-btn {
+    @apply px-2 py-1 rounded text-[10px] font-bold transition-all shrink-0 w-8 bg-slate-50 text-slate-400 border border-slate-200;
+  }
+
+  .pain-btn.active {
+    @apply bg-red-100 text-red-600 border-red-200;
+  }
+
+  .toggle-btn {
+    @apply px-2 py-1 rounded text-[10px] font-medium transition-all bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200;
+  }
+
+  .toggle-btn.active {
+    @apply bg-blue-600 text-white shadow-sm;
+  }
+}

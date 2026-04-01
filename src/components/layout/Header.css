@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.nav-container {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.nav-container::-webkit-scrollbar { 
+  display: none; /* WebKit */
+}
+
+@layer components {
+  .nav-item {
+    @apply px-2 md:px-3 h-full flex items-center text-sm font-medium text-slate-500 hover:text-slate-800 border-b-2 border-transparent whitespace-nowrap transition-colors;
+  }
+  
+  .nav-item.active {
+    @apply font-bold text-blue-600 border-blue-600;
+  }
+}

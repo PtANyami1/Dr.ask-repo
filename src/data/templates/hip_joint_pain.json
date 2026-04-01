@@ -1,0 +1,177 @@
+[
+  {
+    "id": "hip_thomas",
+    "category": "Hip joint pain",
+    "name": "Thomas/Patrick",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "thomas_rt",
+        "label": "Thomas(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "thomas_lt",
+        "label": "Thomas(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "patrick_rt",
+        "label": "Patrick(Rt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "patrick_lt",
+        "label": "Patrick(Lt)",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Thomas / Patrick test"
+  },
+  {
+    "id": "hip_smd_umd",
+    "category": "Hip joint pain",
+    "name": "SMD/UMD",
+    "type": "input",
+    "guideText": "SMD / UMD",
+    "placeholder": "79/87 80/88"
+  },
+  {
+    "id": "hip_trendelenburg",
+    "category": "Hip joint pain",
+    "name": "Trendelenburg",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Trendelenburg sign"
+  },
+  {
+    "id": "hip_flex_ext",
+    "category": "Hip joint pain",
+    "name": "A-ROM Flex/Ext",
+    "type": "rom",
+    "guideText": "Flexion / Extension",
+    "subItems": [
+      {
+        "id": "flex_rt",
+        "label": "Flex(Rt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Flex(Lt)",
+        "placeholder": "135"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "30"
+      }
+    ]
+  },
+  {
+    "id": "hip_add_abd",
+    "category": "Hip joint pain",
+    "name": "A-ROM Add/Abd",
+    "type": "rom",
+    "guideText": "Adduction / Abduction",
+    "subItems": [
+      {
+        "id": "add_rt",
+        "label": "Add(Rt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "add_lt",
+        "label": "Add(Lt)",
+        "placeholder": "30"
+      },
+      {
+        "id": "abd_rt",
+        "label": "Abd(Rt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "abd_lt",
+        "label": "Abd(Lt)",
+        "placeholder": "45"
+      }
+    ]
+  },
+  {
+    "id": "hip_rot",
+    "category": "Hip joint pain",
+    "name": "A-ROM Int.rot/Ext.rot",
+    "type": "rom",
+    "guideText": "Internal / External rotation",
+    "subItems": [
+      {
+        "id": "int_rt",
+        "label": "Int(Rt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "int_lt",
+        "label": "Int(Lt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "ext_rt",
+        "label": "Ext(Rt)",
+        "placeholder": "35"
+      },
+      {
+        "id": "ext_lt",
+        "label": "Ext(Lt)",
+        "placeholder": "35"
+      }
+    ]
+  },
+  {
+    "id": "hip_mmt",
+    "category": "Hip joint pain",
+    "name": "MMT",
+    "type": "input",
+    "guideText": "Manual Muscle Testing",
+    "placeholder": "Gr5"
+  }
+]

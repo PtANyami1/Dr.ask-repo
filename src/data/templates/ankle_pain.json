@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ankle_ottawa",
+    "category": "Ankle pain",
+    "name": "Ottawa rule",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Ottawa ankle rules"
+  },
+  {
+    "id": "ankle_drawer",
+    "category": "Ankle pain",
+    "name": "Drawer's sign",
+    "type": "multi-toggle",
+    "subItems": [
+      {
+        "id": "rt",
+        "label": "Rt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      },
+      {
+        "id": "lt",
+        "label": "Lt",
+        "options": [
+          "-",
+          "+"
+        ],
+        "defaultValue": "-"
+      }
+    ],
+    "guideText": "Ankle drawer sign"
+  },
+  {
+    "id": "ankle_dorsi_plantar",
+    "category": "Ankle pain",
+    "name": "A-ROM Dorsi/Plantar flexion",
+    "type": "rom",
+    "guideText": "Dorsiflexion / Plantarflexion",
+    "subItems": [
+      {
+        "id": "dorsi_rt",
+        "label": "Dorsi(Rt)",
+        "placeholder": "20"
+      },
+      {
+        "id": "dorsi_lt",
+        "label": "Dorsi(Lt)",
+        "placeholder": "20"
+      },
+      {
+        "id": "plantar_rt",
+        "label": "Plantar(Rt)",
+        "placeholder": "50"
+      },
+      {
+        "id": "plantar_lt",
+        "label": "Plantar(Lt)",
+        "placeholder": "50"
+      }
+    ]
+  },
+  {
+    "id": "ankle_inv_ev",
+    "category": "Ankle pain",
+    "name": "A-ROM Inversion/Eversion",
+    "type": "rom",
+    "guideText": "Inversion / Eversion",
+    "subItems": [
+      {
+        "id": "inv_rt",
+        "label": "Inv(Rt)",
+        "placeholder": "35"
+      },
+      {
+        "id": "inv_lt",
+        "label": "Inv(Lt)",
+        "placeholder": "35"
+      },
+      {
+        "id": "ev_rt",
+        "label": "Ev(Rt)",
+        "placeholder": "25"
+      },
+      {
+        "id": "ev_lt",
+        "label": "Ev(Lt)",
+        "placeholder": "25"
+      }
+    ]
+  }
+]
