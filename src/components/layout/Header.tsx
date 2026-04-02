@@ -9,8 +9,8 @@ export const Header: React.FC = () => {
         <nav className="nav-container flex items-center gap-2 md:gap-4 h-full flex-1">
           <button className="nav-item" onClick={() => { alert("아직 작업 중입니다.") }}>C/C 및 P/I</button>
           <button className="nav-item active">이학적 검사</button>
-          <button className="nav-item" onClick={() => { alert("아직 작업 중입니다.") }}></button>
-          <button className="nav-item" onClick={() => { alert("아직 작업 중입니다.") }}>Plan</button>
+          <button className="nav-item" onClick={() => { alert("아직 작업 중입니다.") }}> Prn 및 V/S </button>
+          <button className="nav-item" onClick={() => { alert("아직 작업 중입니다.") }}> Info </button>
         </nav>
       </div>
     </header>
