@@ -155,88 +155,70 @@
     "guideText": "Adson / Roos test"
   },
   {
-    "id": "shoulder_flex_ext",
+    "id": "shoulder_flex_arom",
     "category": "Shoulder pain",
-    "name": "A-ROM Flex/Ext",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Flexion / Extension",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "flex_rt",
-        "label": "Flex(Rt)",
+        "id": "ext_flex_rt",
+        "label": "Flex/Ext(Flex(Rt))",
         "placeholder": "180"
       },
       {
-        "id": "flex_lt",
-        "label": "Flex(Lt)",
+        "id": "ext_flex_lt",
+        "label": "Flex/Ext(Flex(Lt))",
         "placeholder": "180"
       },
       {
-        "id": "ext_rt",
-        "label": "Ext(Rt)",
+        "id": "ext_ext_rt",
+        "label": "Flex/Ext(Ext(Rt))",
         "placeholder": "60"
       },
       {
-        "id": "ext_lt",
-        "label": "Ext(Lt)",
+        "id": "ext_ext_lt",
+        "label": "Flex/Ext(Ext(Lt))",
         "placeholder": "60"
-      }
-    ]
-  },
-  {
-    "id": "shoulder_abd_add",
-    "category": "Shoulder pain",
-    "name": "A-ROM Abd/Add",
-    "type": "rom",
-    "guideText": "Abduction / Adduction",
-    "subItems": [
+      },
       {
-        "id": "abd_rt",
-        "label": "Abd(Rt)",
+        "id": "add_abd_rt",
+        "label": "Abd/Add(Abd(Rt))",
         "placeholder": "180"
       },
       {
-        "id": "abd_lt",
-        "label": "Abd(Lt)",
+        "id": "add_abd_lt",
+        "label": "Abd/Add(Abd(Lt))",
         "placeholder": "180"
       },
       {
-        "id": "add_rt",
-        "label": "Add(Rt)",
+        "id": "add_add_rt",
+        "label": "Abd/Add(Add(Rt))",
         "placeholder": "75"
       },
       {
-        "id": "add_lt",
-        "label": "Add(Lt)",
+        "id": "add_add_lt",
+        "label": "Abd/Add(Add(Lt))",
         "placeholder": "75"
-      }
-    ]
-  },
-  {
-    "id": "shoulder_rot",
-    "category": "Shoulder pain",
-    "name": "A-ROM Int.rot/Ext.rot",
-    "type": "rom",
-    "guideText": "Internal / External rotation",
-    "subItems": [
+      },
       {
-        "id": "int_rt",
-        "label": "Int(Rt)",
+        "id": "rot_int_rt",
+        "label": "Int.rot/Ext.rot(Int(Rt))",
         "placeholder": "90"
       },
       {
-        "id": "int_lt",
-        "label": "Int(Lt)",
+        "id": "rot_int_lt",
+        "label": "Int.rot/Ext.rot(Int(Lt))",
         "placeholder": "90"
       },
       {
-        "id": "ext_rt",
-        "label": "Ext(Rt)",
+        "id": "rot_ext_rt",
+        "label": "Int.rot/Ext.rot(Ext(Rt))",
         "placeholder": "90"
       },
       {
-        "id": "ext_lt",
-        "label": "Ext(Lt)",
+        "id": "rot_ext_lt",
+        "label": "Int.rot/Ext.rot(Ext(Lt))",
         "placeholder": "90"
       }
     ]

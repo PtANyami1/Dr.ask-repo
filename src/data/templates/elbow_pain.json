@@ -45,20 +45,20 @@
     "guideText": "Tennis / Golfer's elbow test"
   },
   {
-    "id": "elbow_flex",
+    "id": "elbow_arom",
     "category": "Elbow pain",
-    "name": "A-ROM Flex",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Flexion",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "rt",
-        "label": "Rt",
+        "id": "flex_rt",
+        "label": "Flex",
         "placeholder": "150"
       },
       {
-        "id": "lt",
-        "label": "Lt",
+        "id": "flex_lt",
+        "label": "Flex",
         "placeholder": "150"
       }
     ]

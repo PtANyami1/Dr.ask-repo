@@ -80,88 +80,70 @@
     "guideText": "Trendelenburg sign"
   },
   {
-    "id": "hip_flex_ext",
+    "id": "hip_flex_arom",
     "category": "Hip joint pain",
-    "name": "A-ROM Flex/Ext",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Flexion / Extension",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "flex_rt",
-        "label": "Flex(Rt)",
+        "id": "ext_flex_rt",
+        "label": "Flex/Ext(Flex(Rt))",
         "placeholder": "135"
       },
       {
-        "id": "flex_lt",
-        "label": "Flex(Lt)",
+        "id": "ext_flex_lt",
+        "label": "Flex/Ext(Flex(Lt))",
         "placeholder": "135"
       },
       {
-        "id": "ext_rt",
-        "label": "Ext(Rt)",
+        "id": "ext_ext_rt",
+        "label": "Flex/Ext(Ext(Rt))",
         "placeholder": "30"
       },
       {
-        "id": "ext_lt",
-        "label": "Ext(Lt)",
-        "placeholder": "30"
-      }
-    ]
-  },
-  {
-    "id": "hip_add_abd",
-    "category": "Hip joint pain",
-    "name": "A-ROM Add/Abd",
-    "type": "rom",
-    "guideText": "Adduction / Abduction",
-    "subItems": [
-      {
-        "id": "add_rt",
-        "label": "Add(Rt)",
+        "id": "ext_ext_lt",
+        "label": "Flex/Ext(Ext(Lt))",
         "placeholder": "30"
       },
       {
-        "id": "add_lt",
-        "label": "Add(Lt)",
+        "id": "abd_add_rt",
+        "label": "Add/Abd(Add(Rt))",
         "placeholder": "30"
       },
       {
-        "id": "abd_rt",
-        "label": "Abd(Rt)",
+        "id": "abd_add_lt",
+        "label": "Add/Abd(Add(Lt))",
+        "placeholder": "30"
+      },
+      {
+        "id": "abd_abd_rt",
+        "label": "Add/Abd(Abd(Rt))",
         "placeholder": "45"
       },
       {
-        "id": "abd_lt",
-        "label": "Abd(Lt)",
-        "placeholder": "45"
-      }
-    ]
-  },
-  {
-    "id": "hip_rot",
-    "category": "Hip joint pain",
-    "name": "A-ROM Int.rot/Ext.rot",
-    "type": "rom",
-    "guideText": "Internal / External rotation",
-    "subItems": [
-      {
-        "id": "int_rt",
-        "label": "Int(Rt)",
+        "id": "abd_abd_lt",
+        "label": "Add/Abd(Abd(Lt))",
         "placeholder": "45"
       },
       {
-        "id": "int_lt",
-        "label": "Int(Lt)",
+        "id": "rot_int_rt",
+        "label": "Int.rot/Ext.rot(Int(Rt))",
         "placeholder": "45"
       },
       {
-        "id": "ext_rt",
-        "label": "Ext(Rt)",
+        "id": "rot_int_lt",
+        "label": "Int.rot/Ext.rot(Int(Lt))",
+        "placeholder": "45"
+      },
+      {
+        "id": "rot_ext_rt",
+        "label": "Int.rot/Ext.rot(Ext(Rt))",
         "placeholder": "35"
       },
       {
-        "id": "ext_lt",
-        "label": "Ext(Lt)",
+        "id": "rot_ext_lt",
+        "label": "Int.rot/Ext.rot(Ext(Lt))",
         "placeholder": "35"
       }
     ]

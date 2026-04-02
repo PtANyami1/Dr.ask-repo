@@ -234,67 +234,40 @@
     "guideText": "Adson/Roos test"
   },
   {
-    "id": "neck_flex",
+    "id": "neck_arom",
     "category": "Neck pain",
-    "name": "A-ROM Flex",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Flexion",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "flex",
+        "id": "flex_flex",
         "label": "Flex",
-        "placeholder": "45"
-      }
-    ]
-  },
-  {
-    "id": "neck_ext",
-    "category": "Neck pain",
-    "name": "A-ROM Ext",
-    "type": "rom",
-    "guideText": "Extension",
-    "subItems": [
-      {
-        "id": "ext",
-        "label": "Ext",
-        "placeholder": "45"
-      }
-    ]
-  },
-  {
-    "id": "neck_lat_flex",
-    "category": "Neck pain",
-    "name": "A-ROM Lat.flex",
-    "type": "rom",
-    "guideText": "Lateral flexion",
-    "subItems": [
-      {
-        "id": "rt",
-        "label": "Rt",
         "placeholder": "45"
       },
       {
-        "id": "lt",
-        "label": "Lt",
+        "id": "ext_ext",
+        "label": "Ext",
         "placeholder": "45"
-      }
-    ]
-  },
-  {
-    "id": "neck_rot",
-    "category": "Neck pain",
-    "name": "A-ROM Rot",
-    "type": "rom",
-    "guideText": "Rotation",
-    "subItems": [
+      },
       {
-        "id": "rt",
-        "label": "Rt",
+        "id": "flex_rt",
+        "label": "Lat(Rt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "flex_lt",
+        "label": "Lat(Lt)",
+        "placeholder": "45"
+      },
+      {
+        "id": "rot_rt",
+        "label": "Rot(Rt)",
         "placeholder": "60"
       },
       {
-        "id": "lt",
-        "label": "Lt",
+        "id": "rot_lt",
+        "label": "Rot(Lt)",
         "placeholder": "60"
       }
     ]

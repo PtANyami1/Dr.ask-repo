@@ -188,9 +188,15 @@
     "id": "lbp_milgram",
     "category": "Lower back pain",
     "name": "Milgram",
-    "type": "input",
+    "type": "rom",
     "guideText": "Milgram test",
-    "placeholder": ""
+    "subItems": [
+      {
+        "id": "sec",
+        "label": "Sec",
+        "placeholder": "0~20"
+      }
+    ]
   },
   {
     "id": "lbp_sensory",
@@ -220,67 +226,40 @@
     "guideText": "Sensory change"
   },
   {
-    "id": "lbp_flex",
+    "id": "lbp_arom",
     "category": "Lower back pain",
-    "name": "A-ROM Flex",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Flexion",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "flex",
+        "id": "flex_flex",
         "label": "Flex",
         "placeholder": "80"
-      }
-    ]
-  },
-  {
-    "id": "lbp_ext",
-    "category": "Lower back pain",
-    "name": "A-ROM Ext",
-    "type": "rom",
-    "guideText": "Extension",
-    "subItems": [
+      },
       {
-        "id": "ext",
+        "id": "ext_ext",
         "label": "Ext",
         "placeholder": "20"
-      }
-    ]
-  },
-  {
-    "id": "lbp_lat_flex",
-    "category": "Lower back pain",
-    "name": "A-ROM Lat.flex",
-    "type": "rom",
-    "guideText": "Lateral flexion",
-    "subItems": [
+      },
       {
-        "id": "rt",
-        "label": "Rt",
+        "id": "flex_rt",
+        "label": "Lat(Rt)",
         "placeholder": "35"
       },
       {
-        "id": "lt",
-        "label": "Lt",
+        "id": "flex_lt",
+        "label": "Lat(Lt)",
         "placeholder": "35"
-      }
-    ]
-  },
-  {
-    "id": "lbp_rot",
-    "category": "Lower back pain",
-    "name": "A-ROM Rot",
-    "type": "rom",
-    "guideText": "Rotation",
-    "subItems": [
+      },
       {
-        "id": "rt",
-        "label": "Rt",
+        "id": "rot_rt",
+        "label": "Rot(Rt)",
         "placeholder": "45"
       },
       {
-        "id": "lt",
-        "label": "Lt",
+        "id": "rot_lt",
+        "label": "Rot(Lt)",
         "placeholder": "45"
       }
     ]

@@ -82,15 +82,20 @@ export const ExamCard: React.FC<ExamCardProps> = ({
                 <div key={subItem.id} className="flex items-center justify-between gap-1">
                   <span className="subitem-label">{subItem.label}</span>
                   <div className="multi-toggle-container">
-                    {subItem.options?.map(opt => (
-                      <button
-                        key={opt}
-                        onClick={() => handleValueChange(subItemId, opt)}
-                        className={`multi-toggle-btn ${subItemValue === opt ? 'active' : ''}`}
-                      >
-                        {opt}
-                      </button>
-                    ))}
+                    {subItem.options?.map(opt => {
+                      const isActive = subItemValue === opt;
+                      const isDefault = opt === subItem.defaultValue;
+                      const activeClass = isActive ? (isDefault ? 'active-default' : 'active-abnormal') : '';
+                      return (
+                        <button
+                          key={opt}
+                          onClick={() => handleValueChange(subItemId, opt)}
+                          className={`multi-toggle-btn ${activeClass}`}
+                        >
+                          {opt}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               );
@@ -116,7 +121,7 @@ export const ExamCard: React.FC<ExamCardProps> = ({
                     />
                     <button
                       onClick={() => handleValueChange(painId, pain === '-' ? '+' : '-')}
-                      className={`pain-btn ${pain === '+' ? 'active' : ''}`}
+                      className={`pain-btn ${pain === '-' ? 'active-default' : 'active-abnormal'}`}
                     >
                       {pain}
                     </button>
@@ -148,11 +153,14 @@ export const ExamCard: React.FC<ExamCardProps> = ({
           <div className="flex gap-1 w-full">
             {template.options?.map(opt => {
               const currentValue = examState[template.id] || template.defaultValue;
+              const isActive = currentValue === opt;
+              const isDefault = opt === template.defaultValue;
+              const activeClass = isActive ? (isDefault ? 'active-default' : 'active-abnormal') : '';
               return (
                 <button
                   key={opt}
                   onClick={() => handleValueChange(template.id, opt)}
-                  className={`toggle-btn flex-1 py-2 ${currentValue === opt ? 'active' : ''}`}
+                  className={`toggle-btn flex-1 py-2 ${activeClass}`}
                 >
                   {opt}
                 </button>

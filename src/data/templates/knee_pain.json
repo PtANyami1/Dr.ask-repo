@@ -180,30 +180,30 @@
     "guideText": "Varus / Valgus stress"
   },
   {
-    "id": "knee_flex_ext",
+    "id": "knee_flex_arom",
     "category": "Knee pain",
-    "name": "A-ROM Flex/Ext",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Flexion / Extension",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "flex_rt",
-        "label": "Flex(Rt)",
+        "id": "ext_flex_rt",
+        "label": "Flex/Ext(Flex(Rt))",
         "placeholder": "135"
       },
       {
-        "id": "flex_lt",
-        "label": "Flex(Lt)",
+        "id": "ext_flex_lt",
+        "label": "Flex/Ext(Flex(Lt))",
         "placeholder": "135"
       },
       {
-        "id": "ext_rt",
-        "label": "Ext(Rt)",
+        "id": "ext_ext_rt",
+        "label": "Flex/Ext(Ext(Rt))",
         "placeholder": "0"
       },
       {
-        "id": "ext_lt",
-        "label": "Ext(Lt)",
+        "id": "ext_ext_lt",
+        "label": "Flex/Ext(Ext(Lt))",
         "placeholder": "0"
       }
     ]

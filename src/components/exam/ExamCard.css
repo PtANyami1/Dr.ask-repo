@@ -26,10 +26,14 @@
   }
 
   .multi-toggle-btn {
-    @apply px-2 py-1 text-[10px] font-medium transition-all bg-slate-50 text-slate-600 hover:bg-slate-100 border-r border-slate-200 last:border-r-0;
+    @apply px-2 py-1 text-[10px] font-medium transition-all bg-white text-slate-800 hover:bg-slate-100 border-r border-slate-300 last:border-r-0;
   }
 
-  .multi-toggle-btn.active {
+  .multi-toggle-btn.active-abnormal {
+    @apply bg-red-500 text-white font-bold;
+  }
+
+  .multi-toggle-btn.active-default {
     @apply bg-blue-600 text-white;
   }
 
@@ -42,18 +46,26 @@
   }
 
   .pain-btn {
-    @apply px-2 py-1 rounded text-[10px] font-bold transition-all shrink-0 w-8 bg-slate-50 text-slate-400 border border-slate-200;
+    @apply px-2 py-1 rounded text-[10px] font-bold transition-all shrink-0 w-8 bg-white text-slate-800 border border-slate-300;
   }
 
-  .pain-btn.active {
-    @apply bg-red-100 text-red-600 border-red-200;
+  .pain-btn.active-abnormal {
+    @apply bg-red-500 text-white border-red-500;
+  }
+
+  .pain-btn.active-default {
+    @apply bg-blue-600 text-white border-blue-600;
   }
 
   .toggle-btn {
-    @apply px-2 py-1 rounded text-[10px] font-medium transition-all bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200;
+    @apply px-2 py-1 rounded text-[10px] font-medium transition-all bg-white text-slate-800 hover:bg-slate-100 border border-slate-300;
   }
 
-  .toggle-btn.active {
-    @apply bg-blue-600 text-white shadow-sm;
+  .toggle-btn.active-abnormal {
+    @apply bg-red-500 text-white shadow-sm font-bold border-red-500;
+  }
+
+  .toggle-btn.active-default {
+    @apply bg-blue-600 text-white shadow-sm border-blue-600;
   }
 }

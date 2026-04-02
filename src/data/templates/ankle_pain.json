@@ -54,59 +54,50 @@
     "guideText": "Ankle drawer sign"
   },
   {
-    "id": "ankle_dorsi_plantar",
+    "id": "ankle_dorsi_arom",
     "category": "Ankle pain",
-    "name": "A-ROM Dorsi/Plantar flexion",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Dorsiflexion / Plantarflexion",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "dorsi_rt",
-        "label": "Dorsi(Rt)",
+        "id": "plantar_dorsi_rt",
+        "label": "Dorsi/Plantar flexion(Dorsi(Rt))",
         "placeholder": "20"
       },
       {
-        "id": "dorsi_lt",
-        "label": "Dorsi(Lt)",
+        "id": "plantar_dorsi_lt",
+        "label": "Dorsi/Plantar flexion(Dorsi(Lt))",
         "placeholder": "20"
       },
       {
-        "id": "plantar_rt",
-        "label": "Plantar(Rt)",
+        "id": "plantar_plantar_rt",
+        "label": "Dorsi/Plantar flexion(Plantar(Rt))",
         "placeholder": "50"
       },
       {
-        "id": "plantar_lt",
-        "label": "Plantar(Lt)",
+        "id": "plantar_plantar_lt",
+        "label": "Dorsi/Plantar flexion(Plantar(Lt))",
         "placeholder": "50"
-      }
-    ]
-  },
-  {
-    "id": "ankle_inv_ev",
-    "category": "Ankle pain",
-    "name": "A-ROM Inversion/Eversion",
-    "type": "rom",
-    "guideText": "Inversion / Eversion",
-    "subItems": [
+      },
       {
-        "id": "inv_rt",
-        "label": "Inv(Rt)",
+        "id": "ev_inv_rt",
+        "label": "Inversion/Eversion(Inv(Rt))",
         "placeholder": "35"
       },
       {
-        "id": "inv_lt",
-        "label": "Inv(Lt)",
+        "id": "ev_inv_lt",
+        "label": "Inversion/Eversion(Inv(Lt))",
         "placeholder": "35"
       },
       {
-        "id": "ev_rt",
-        "label": "Ev(Rt)",
+        "id": "ev_ev_rt",
+        "label": "Inversion/Eversion(Ev(Rt))",
         "placeholder": "25"
       },
       {
-        "id": "ev_lt",
-        "label": "Ev(Lt)",
+        "id": "ev_ev_lt",
+        "label": "Inversion/Eversion(Ev(Lt))",
         "placeholder": "25"
       }
     ]

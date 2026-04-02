@@ -72,88 +72,70 @@
     "guideText": "Tinel / Phalen test"
   },
   {
-    "id": "wrist_ext_flex",
+    "id": "wrist_ext_arom",
     "category": "Wrist pain",
-    "name": "A-ROM Ext/Flex",
+    "name": "A-ROM",
     "type": "rom",
-    "guideText": "Extension / Flexion",
+    "guideText": "Active Range of Motion (Combined)",
     "subItems": [
       {
-        "id": "ext_rt",
-        "label": "Ext(Rt)",
+        "id": "flex_ext_rt",
+        "label": "Ext/Flex(Ext(Rt))",
         "placeholder": "70"
       },
       {
-        "id": "ext_lt",
-        "label": "Ext(Lt)",
+        "id": "flex_ext_lt",
+        "label": "Ext/Flex(Ext(Lt))",
         "placeholder": "70"
       },
       {
-        "id": "flex_rt",
-        "label": "Flex(Rt)",
+        "id": "flex_flex_rt",
+        "label": "Ext/Flex(Flex(Rt))",
         "placeholder": "80"
       },
       {
-        "id": "flex_lt",
-        "label": "Flex(Lt)",
+        "id": "flex_flex_lt",
+        "label": "Ext/Flex(Flex(Lt))",
         "placeholder": "80"
-      }
-    ]
-  },
-  {
-    "id": "wrist_rad_ulnar",
-    "category": "Wrist pain",
-    "name": "A-ROM Radial/Ulnar",
-    "type": "rom",
-    "guideText": "Radial / Ulnar deviation",
-    "subItems": [
+      },
       {
-        "id": "rad_rt",
-        "label": "Rad(Rt)",
+        "id": "ulnar_rad_rt",
+        "label": "Radial/Ulnar(Rad(Rt))",
         "placeholder": "15"
       },
       {
-        "id": "rad_lt",
-        "label": "Rad(Lt)",
+        "id": "ulnar_rad_lt",
+        "label": "Radial/Ulnar(Rad(Lt))",
         "placeholder": "15"
       },
       {
-        "id": "uln_rt",
-        "label": "Ulnar(Rt)",
+        "id": "ulnar_uln_rt",
+        "label": "Radial/Ulnar(Ulnar(Rt))",
         "placeholder": "30"
       },
       {
-        "id": "uln_lt",
-        "label": "Ulnar(Lt)",
+        "id": "ulnar_uln_lt",
+        "label": "Radial/Ulnar(Ulnar(Lt))",
         "placeholder": "30"
-      }
-    ]
-  },
-  {
-    "id": "wrist_sup_pro",
-    "category": "Wrist pain",
-    "name": "A-ROM Sup/Pro",
-    "type": "rom",
-    "guideText": "Supination / Pronation",
-    "subItems": [
+      },
       {
-        "id": "sup_rt",
-        "label": "Sup(Rt)",
+        "id": "pro_sup_rt",
+        "label": "Sup/Pro(Sup(Rt))",
         "placeholder": "90"
       },
       {
-        "id": "sup_lt",
-        "label": "Sup(Lt)",
+        "id": "pro_sup_lt",
+        "label": "Sup/Pro(Sup(Lt))",
         "placeholder": "90"
       },
       {
-        "id": "pro_rt",
-        "label": "Pro(Rt)",
+        "id": "pro_pro_rt",
+        "label": "Sup/Pro(Pro(Rt))",
         "placeholder": "90"
       },
       {
-        "id": "pro_lt",
-        "label": "Pro(Lt)",
+        "id": "pro_pro_lt",
+        "label": "Sup/Pro(Pro(Lt))",
         "placeholder": "90"
       }
     ]
