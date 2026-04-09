@@ -1,6 +1,6 @@
-import React from 'react';
-import { Info, RotateCcw } from 'lucide-react';
-import { motion } from 'motion/react';
+import React, { useState } from 'react';
+import { Info, RotateCcw, Plus, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 import { ExamTemplate, ExamValues } from '../../types/exam';
 import { isModified } from '../../utils/examUtils';
 import './ExamCard.css';
@@ -15,6 +15,8 @@ interface ExamCardProps {
 
 export const ExamCard: React.FC<ExamCardProps> = ({ template, values, onChange, onReset, onShowGuide }) => {
   const isChanged = isModified(template, values);
+  const hasMemo = !!(values['_memo'] && values['_memo'].trim());
+  const [memoOpen, setMemoOpen] = useState(hasMemo);
 
   return (
     <motion.div
@@ -35,15 +37,24 @@ export const ExamCard: React.FC<ExamCardProps> = ({ template, values, onChange, 
             <Info size={12} />
           </button>
         </h3>
-        {isChanged && (
+        <div className="flex items-center gap-0.5 shrink-0">
           <button
-            onClick={onReset}
-            className="text-slate-400 hover:text-orange-500 transition-colors p-0.5 shrink-0"
-            title="초기화"
+            onClick={() => setMemoOpen(!memoOpen)}
+            className={`memo-toggle-btn ${memoOpen || hasMemo ? 'has-memo' : ''}`}
+            title={memoOpen ? '메모 닫기' : '메모 추가'}
           >
-            <RotateCcw size={12} />
+            {memoOpen ? <X size={10} /> : <Plus size={10} />}
           </button>
-        )}
+          {isChanged && (
+            <button
+              onClick={onReset}
+              className="text-slate-400 hover:text-orange-500 transition-colors p-0.5 shrink-0"
+              title="초기화"
+            >
+              <RotateCcw size={12} />
+            </button>
+          )}
+        </div>
       </div>
 
       <div>
@@ -155,6 +166,29 @@ export const ExamCard: React.FC<ExamCardProps> = ({ template, values, onChange, 
           </div>
         )}
       </div>
+
+      {/* 메모 입력란 */}
+      <AnimatePresence>
+        {memoOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="overflow-hidden"
+          >
+            <div className="memo-container">
+              <textarea
+                value={values['_memo'] || ''}
+                onChange={(e) => onChange('_memo', e.target.value)}
+                placeholder="메모 입력..."
+                className="memo-input"
+                rows={2}
+              />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

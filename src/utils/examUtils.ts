@@ -41,13 +41,14 @@ export function isModified(template: ExamTemplate, values: ExamValues): boolean 
 }
 
 export function formatOutput(template: ExamTemplate, values: ExamValues): string {
+  let result = '';
+
   if ((template.type === 'multi-toggle' || template.type === 'multi-select') && template.subItems) {
     const subResults = template.subItems
       .map(sub => `${sub.label}: ${values[sub.id] ?? sub.defaultValue}`)
       .join(', ');
-    return ` - ${template.name}: [ ${subResults} ]`;
-  }
-  if (template.type === 'rom' && template.subItems) {
+    result = ` - ${template.name}: [ ${subResults} ]`;
+  } else if (template.type === 'rom' && template.subItems) {
     const subResults = template.subItems
       .map(sub => {
         const val = values[`${sub.id}_val`] || sub.placeholder || '';
@@ -55,16 +56,24 @@ export function formatOutput(template: ExamTemplate, values: ExamValues): string
         return `${sub.label}: ${val}(${pain})`;
       })
       .join(', ');
-    return ` - ${template.name}: [ ${subResults} ]`;
-  }
-  if (template.type === 'multi-input' && template.subItems) {
+    result = ` - ${template.name}: [ ${subResults} ]`;
+  } else if (template.type === 'multi-input' && template.subItems) {
     const subResults = template.subItems
       .map(sub => `${sub.label}: ${values[sub.id] || sub.placeholder || ''}`)
       .join(', ');
-    return ` - ${template.name}: [ ${subResults} ]`;
+    result = ` - ${template.name}: [ ${subResults} ]`;
+  } else if (template.type === 'input') {
+    result = ` - ${template.name}: ${values['value'] || template.placeholder || template.defaultValue || ''}`;
+  } else {
+    result = ` - ${template.name}: ${values['value'] ?? template.defaultValue}`;
   }
-  if (template.type === 'input') {
-    return ` - ${template.name}: ${values['value'] || template.placeholder || template.defaultValue || ''}`;
+
+  // 메모 추가
+  const memo = values['_memo']?.trim();
+  if (memo) {
+    result += ` (memo: ${memo})`;
   }
-  return ` - ${template.name}: ${values['value'] ?? template.defaultValue}`;
+
+  return result;
 }
+

@@ -68,4 +68,23 @@
   .toggle-btn.active-default {
     @apply bg-blue-600 text-white shadow-sm border-blue-600;
   }
+
+  /* ── 메모 ── */
+  .memo-toggle-btn {
+    @apply p-0.5 rounded text-slate-300 hover:text-blue-500 hover:bg-blue-50 transition-all shrink-0;
+  }
+
+  .memo-toggle-btn.has-memo {
+    @apply text-blue-500;
+  }
+
+  .memo-container {
+    @apply mt-2 pt-2 border-t border-dashed border-slate-200;
+  }
+
+  .memo-input {
+    @apply w-full px-2 py-1.5 rounded border border-slate-200 text-[10px] font-medium
+           focus:outline-none focus:ring-1 focus:ring-blue-500/20 bg-slate-50/80
+           resize-none leading-relaxed placeholder:text-slate-300;
+  }
 }
