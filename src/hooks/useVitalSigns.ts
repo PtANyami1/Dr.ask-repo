@@ -30,6 +30,9 @@ export interface VitalSignsState {
   exercise: string;
   stress: string;
   smoking: string;
+
+  // 메모
+  memo: string;
 }
 
 const INITIAL_STATE: VitalSignsState = {
@@ -40,6 +43,7 @@ const INITIAL_STATE: VitalSignsState = {
   headache: '-', dizziness: '-', nausea: '-', vomiting: '-',
   chestDiscomfort: '-', chestPain: '-',
   bpMed: '-', bpMedTime: '', exercise: '-', stress: '-', smoking: '-',
+  memo: '',
 };
 
 // ─── 범위 판정 함수 ───
@@ -132,6 +136,10 @@ export function useVitalSigns() {
       lines.push(` - 운동: ${vs.exercise === '+' ? 'Y' : 'N'}`);
       lines.push(` - 스트레스: ${vs.stress === '+' ? 'Y' : 'N'}`);
       lines.push(` - 흡연: ${vs.smoking === '+' ? 'Y' : 'N'}`);
+    }
+
+    if (vs.memo && vs.memo.trim()) {
+      lines.push(` - 메모: ${vs.memo.trim()}`);
     }
 
     return lines.join('\n');

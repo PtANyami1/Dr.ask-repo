@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Plus, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BstState, BstRangeStatus } from '../../hooks/useBst';
 
@@ -60,6 +61,9 @@ const YNToggle: React.FC<{
 export const BstSection: React.FC<BstSectionProps> = ({
   bstState, updateField, rangeStatus, isOutOfRange
 }) => {
+  const [memoOpen, setMemoOpen] = useState(!!(bstState.memo && bstState.memo.trim()));
+  const hasMemo = !!(bstState.memo && bstState.memo.trim());
+
   return (
     <div className="vs-content">
       {/* ═══ 기본 BST 입력 ═══ */}
@@ -152,6 +156,54 @@ export const BstSection: React.FC<BstSectionProps> = ({
                 <div className="vs-lifestyle-grid">
                   <YNToggle label="당뇨약" value={bstState.dmMed} onChange={v => updateField('dmMed', v)} />
 
+                  {/* 당뇨약 복용 시점 */}
+                  <AnimatePresence>
+                    {bstState.dmMed === '+' && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="vs-med-time-wrap"
+                      >
+                        <div className="vs-med-time-row">
+                          <span className="vs-field-label vs-field-label-indent">복용 시점</span>
+                          <input
+                            type="text"
+                            value={bstState.dmMedTime}
+                            onChange={e => updateField('dmMedTime', e.target.value)}
+                            placeholder="예: 아침 식후"
+                            className="vs-text-input vs-med-time-input"
+                          />
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
+                  {/* 인슐린 투여 시점 (인슐린 투여 시만) */}
+                  <AnimatePresence>
+                    {bstState.insulin === '+' && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="vs-med-time-wrap"
+                      >
+                        <div className="vs-med-time-row">
+                          <span className="vs-field-label">인슐린 투여 시점</span>
+                          <input
+                            type="text"
+                            value={bstState.insulinTime}
+                            onChange={e => updateField('insulinTime', e.target.value)}
+                            placeholder="예: 식전 30분"
+                            className="vs-text-input vs-med-time-input"
+                          />
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
                   {/* 식사 */}
                   <div className="vs-yn-row">
                     <span className="vs-field-label">식사</span>
@@ -216,6 +268,39 @@ export const BstSection: React.FC<BstSectionProps> = ({
                   </AnimatePresence>
                 </div>
               </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* ═══ 메모 ═══ */}
+      <div className="vs-memo-row">
+        <span className="vs-field-label">메모</span>
+        <button
+          onClick={() => setMemoOpen(!memoOpen)}
+          className={`memo-toggle-btn ${memoOpen || hasMemo ? 'has-memo' : ''}`}
+          title={memoOpen ? '메모 닫기' : '메모 추가'}
+        >
+          {memoOpen ? <X size={10} /> : <Plus size={10} />}
+        </button>
+      </div>
+      <AnimatePresence>
+        {memoOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="overflow-hidden"
+          >
+            <div className="memo-container">
+              <textarea
+                value={bstState.memo}
+                onChange={e => updateField('memo', e.target.value)}
+                placeholder="메모 입력..."
+                className="memo-input"
+                rows={2}
+              />
             </div>
           </motion.div>
         )}

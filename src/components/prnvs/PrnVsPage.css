@@ -252,4 +252,8 @@
   .vs-med-time-input {
     @apply flex-1 max-w-48;
   }
+
+  .vs-memo-row {
+    @apply flex items-center gap-2 mt-3 pt-3 border-t border-slate-100;
+  }
 }

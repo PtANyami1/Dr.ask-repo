@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { ChevronDown, RotateCcw, Activity, Droplets, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { VitalSignsState } from '../../hooks/useVitalSigns';
+import { BstState, BstRangeStatus } from '../../hooks/useBst';
 import { VitalSignsSection } from './VitalSignsSection';
+import { BstSection } from './BstSection';
 import './PrnVsPage.css';
 
 // ─── 아코디언 섹션별 설정 ───
@@ -20,7 +22,7 @@ interface SectionConfig {
 
 const SECTIONS: SectionConfig[] = [
   { id: 'vs', title: 'V/S', subtitle: 'Vital Signs', icon: <Activity size={16} />, iconBg: 'bg-rose-500', enabled: true },
-  { id: 'bst', title: 'BST', subtitle: 'Blood Sugar Test', icon: <Droplets size={16} />, iconBg: 'bg-amber-500', enabled: false },
+  { id: 'bst', title: 'BST', subtitle: 'Blood Sugar Test', icon: <Droplets size={16} />, iconBg: 'bg-amber-500', enabled: true },
   { id: 'prn_headache', title: '두통/현훈', subtitle: 'PRN - Headache/Dizziness', icon: <FileText size={16} />, iconBg: 'bg-violet-500', enabled: false },
   { id: 'prn_fatigue', title: '기력저하', subtitle: 'PRN - Fatigue', icon: <FileText size={16} />, iconBg: 'bg-violet-500', enabled: false },
   { id: 'prn_respiratory', title: '호흡기증상', subtitle: 'PRN - Respiratory', icon: <FileText size={16} />, iconBg: 'bg-sky-500', enabled: false },
@@ -42,10 +44,18 @@ interface PrnVsPageProps {
     anyOut: boolean;
   };
   hasAnyValue: boolean;
+  // BST
+  bstState: BstState;
+  updateBstField: (field: keyof BstState, value: string) => void;
+  resetBst: () => void;
+  bstRangeStatus: BstRangeStatus;
+  bstIsOutOfRange: boolean;
+  bstHasAnyValue: boolean;
 }
 
 export const PrnVsPage: React.FC<PrnVsPageProps> = ({
-  vs, updateField, resetAll, rangeStatus, hasAnyValue
+  vs, updateField, resetAll, rangeStatus, hasAnyValue,
+  bstState, updateBstField, resetBst, bstRangeStatus, bstIsOutOfRange, bstHasAnyValue,
 }) => {
   const [openSections, setOpenSections] = useState<Set<SectionId>>(new Set(['vs']));
 
@@ -68,6 +78,13 @@ export const PrnVsPage: React.FC<PrnVsPageProps> = ({
     return <span className="prnvs-status-badge normal">정상</span>;
   };
 
+  // BST 상태 배지
+  const getBstStatusBadge = () => {
+    if (!bstHasAnyValue) return <span className="prnvs-status-badge empty">미입력</span>;
+    if (bstIsOutOfRange) return <span className="prnvs-status-badge abnormal">범위 밖</span>;
+    return <span className="prnvs-status-badge normal">정상</span>;
+  };
+
   // 섹션 콘텐츠 렌더링
   const renderSectionContent = (section: SectionConfig) => {
     if (!section.enabled) {
@@ -87,6 +104,15 @@ export const PrnVsPage: React.FC<PrnVsPageProps> = ({
             rangeStatus={rangeStatus}
           />
         );
+      case 'bst':
+        return (
+          <BstSection
+            bstState={bstState}
+            updateField={updateBstField}
+            rangeStatus={bstRangeStatus}
+            isOutOfRange={bstIsOutOfRange}
+          />
+        );
       default:
         return null;
     }
@@ -95,6 +121,7 @@ export const PrnVsPage: React.FC<PrnVsPageProps> = ({
   // 섹션 상태 배지
   const renderStatusBadge = (section: SectionConfig) => {
     if (section.id === 'vs') return getVsStatusBadge();
+    if (section.id === 'bst') return getBstStatusBadge();
     if (!section.enabled) return <span className="prnvs-status-badge empty">준비중</span>;
     return null;
   };
@@ -103,6 +130,7 @@ export const PrnVsPage: React.FC<PrnVsPageProps> = ({
   const handleReset = (section: SectionConfig, e: React.MouseEvent) => {
     e.stopPropagation();
     if (section.id === 'vs') resetAll();
+    if (section.id === 'bst') resetBst();
   };
 
   return (
@@ -128,6 +156,15 @@ export const PrnVsPage: React.FC<PrnVsPageProps> = ({
               <div className="prnvs-section-header-right">
                 {renderStatusBadge(section)}
                 {section.enabled && isOpen && hasAnyValue && section.id === 'vs' && (
+                  <button
+                    className="prnvs-reset-btn"
+                    onClick={e => handleReset(section, e)}
+                    title="초기화"
+                  >
+                    <RotateCcw size={12} />
+                  </button>
+                )}
+                {section.enabled && isOpen && bstHasAnyValue && section.id === 'bst' && (
                   <button
                     className="prnvs-reset-btn"
                     onClick={e => handleReset(section, e)}

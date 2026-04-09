@@ -12,6 +12,7 @@ import { GuideModal } from './components/common/GuideModal';
 import { InfoPage } from './components/info/InfoPage';
 import { PrnVsPage } from './components/prnvs/PrnVsPage';
 import { useVitalSigns } from './hooks/useVitalSigns';
+import { useBst } from './hooks/useBst';
 
 import './App.css';
 
@@ -38,6 +39,9 @@ export default function App() {
   // V/S 상태 (PrnVs 탭용)
   const vitalSigns = useVitalSigns();
 
+  // BST 상태 (PrnVs 탭용)
+  const bst = useBst();
+
   const toggleCategory = (category: string) => {
     setSelectedCategories(prev => 
       prev.includes(category) 
@@ -54,12 +58,15 @@ export default function App() {
 
   const examOutputText = useMemo(() => generateOutput(selectedCategories), [generateOutput, selectedCategories]);
   const vsOutputText = vitalSigns.generateOutput();
+  const bstOutputText = bst.generateOutput();
 
   // 현재 탭에 맞는 출력 텍스트
   const outputText = useMemo(() => {
-    if (activeTab === 'PrnVs') return vsOutputText;
+    if (activeTab === 'PrnVs') {
+      return [vsOutputText, bstOutputText].filter(Boolean).join('\n\n');
+    }
     return examOutputText;
-  }, [activeTab, vsOutputText, examOutputText]);
+  }, [activeTab, vsOutputText, bstOutputText, examOutputText]);
 
   const handleCopy = () => copyToClipboard(outputText);
 
@@ -76,6 +83,12 @@ export default function App() {
           resetAll={vitalSigns.resetAll}
           rangeStatus={vitalSigns.rangeStatus}
           hasAnyValue={vitalSigns.hasAnyValue}
+          bstState={bst.bstState}
+          updateBstField={bst.updateField}
+          resetBst={bst.resetAll}
+          bstRangeStatus={bst.rangeStatus}
+          bstIsOutOfRange={bst.isOutOfRange}
+          bstHasAnyValue={bst.hasAnyValue}
         />
       ) : activeTab === 'PhysicalExam' ? (
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-0 md:gap-6 p-4 md:p-8 pt-0 md:pt-8">

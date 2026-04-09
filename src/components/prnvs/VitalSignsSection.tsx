@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Plus, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { VitalSignsState } from '../../hooks/useVitalSigns';
 
@@ -64,6 +65,9 @@ const SymptomToggle: React.FC<{
 export const VitalSignsSection: React.FC<VitalSignsSectionProps> = ({
   vs, updateField, rangeStatus
 }) => {
+  const [memoOpen, setMemoOpen] = useState(!!(vs.memo && vs.memo.trim()));
+  const hasMemo = !!(vs.memo && vs.memo.trim());
+
   return (
     <div className="vs-content">
       {/* ═══ 기본 V/S 입력 ═══ */}
@@ -251,6 +255,39 @@ export const VitalSignsSection: React.FC<VitalSignsSectionProps> = ({
                   <YNToggle label="흡연" value={vs.smoking} onChange={v => updateField('smoking', v)} />
                 </div>
               </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* ═══ 메모 ═══ */}
+      <div className="vs-memo-row">
+        <span className="vs-field-label">메모</span>
+        <button
+          onClick={() => setMemoOpen(!memoOpen)}
+          className={`memo-toggle-btn ${memoOpen || hasMemo ? 'has-memo' : ''}`}
+          title={memoOpen ? '메모 닫기' : '메모 추가'}
+        >
+          {memoOpen ? <X size={10} /> : <Plus size={10} />}
+        </button>
+      </div>
+      <AnimatePresence>
+        {memoOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="overflow-hidden"
+          >
+            <div className="memo-container">
+              <textarea
+                value={vs.memo}
+                onChange={e => updateField('memo', e.target.value)}
+                placeholder="메모 입력..."
+                className="memo-input"
+                rows={2}
+              />
             </div>
           </motion.div>
         )}

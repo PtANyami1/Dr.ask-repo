@@ -23,19 +23,26 @@ export interface BstState {
   sweating: string;      // 한출
 
   // 공통 (고혈당/저혈당 모두)
-  dmMed: string;         // 당뇨약 투여 여부
-  meal: string;          // 식사
-  snack: string;         // 간식
-  fluidIntake: string;   // 음수량
-  exercise: string;      // 운동 여부
+  dmMed: string;          // 당뇨약 복용 여부
+  dmMedTime: string;      // 당뇨약 복용 시점
+  insulinTime: string;    // 인슐린 투여 시점
+  meal: string;           // 식사
+  snack: string;          // 간식
+  fluidIntake: string;    // 음수량
+  exercise: string;       // 운동 여부
   exerciseAmount: string; // 운동량 (운동 시에만)
+
+  // 메모
+  memo: string;
 }
 
 const INITIAL_STATE: BstState = {
   bst: '', insulin: '-',
   polydipsia: '-', polyuria: '-', numbHands: '-', fatigue: '-', itching: '-',
   dizziness: '-', palpitation: '-', numbness: '-', pallor: '-', tired: '-', dyspnea: '-', sweating: '-',
-  dmMed: '-', meal: '', snack: '', fluidIntake: '', exercise: '-', exerciseAmount: '',
+  dmMed: '-', dmMedTime: '', insulinTime: '',
+  meal: '', snack: '', fluidIntake: '', exercise: '-', exerciseAmount: '',
+  memo: '',
 };
 
 // ─── 범위 판정 ───
@@ -104,6 +111,13 @@ export function useBst() {
 
     if (isOutOfRange) {
       lines.push(` - 당뇨약: ${bstState.dmMed === '+' ? 'Y' : 'N'}`);
+      if (bstState.dmMed === '+') {
+        lines.push(` - 당뇨약 복용 시점: ${bstState.dmMedTime || '미기재'}`);
+      }
+      lines.push(` - 인슐린 투여: ${bstState.insulin === '+' ? 'Y' : 'N'}`);
+      if (bstState.insulin === '+') {
+        lines.push(` - 인슐린 투여 시점: ${bstState.insulinTime || '미기재'}`);
+      }
       lines.push(` - 식사: ${bstState.meal || '미기재'}`);
       lines.push(` - 간식: ${bstState.snack || '미기재'}`);
       lines.push(` - 음수량: ${bstState.fluidIntake || '미기재'}`);
@@ -111,6 +125,10 @@ export function useBst() {
       if (bstState.exercise === '+') {
         lines.push(` - 운동량: ${bstState.exerciseAmount || '미기재'}`);
       }
+    }
+
+    if (bstState.memo && bstState.memo.trim()) {
+      lines.push(` - 메모: ${bstState.memo.trim()}`);
     }
 
     return lines.join('\n');
