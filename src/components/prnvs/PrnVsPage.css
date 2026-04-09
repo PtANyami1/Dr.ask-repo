@@ -1,0 +1,255 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════
+   Prn & V/S 페이지 레이아웃
+   ═══════════════════════════════════════════ */
+
+@layer components {
+
+  /* ── 아코디언 섹션 ── */
+  .prnvs-section {
+    @apply bg-white rounded-xl border border-slate-200 overflow-hidden transition-all duration-200;
+  }
+
+  .prnvs-section.open {
+    @apply shadow-sm;
+  }
+
+  .prnvs-section-header {
+    @apply flex items-center justify-between px-4 py-3 cursor-pointer select-none hover:bg-slate-50 transition-colors;
+  }
+
+  .prnvs-section-header-left {
+    @apply flex items-center gap-2.5;
+  }
+
+  .prnvs-section-icon {
+    @apply w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold shrink-0;
+  }
+
+  .prnvs-section-title {
+    @apply text-sm font-bold text-slate-800;
+  }
+
+  .prnvs-section-subtitle {
+    @apply text-[10px] text-slate-400 font-medium;
+  }
+
+  .prnvs-section-header-right {
+    @apply flex items-center gap-2;
+  }
+
+  .prnvs-reset-btn {
+    @apply text-[10px] text-slate-400 hover:text-orange-500 font-medium px-2 py-1 rounded transition-colors;
+  }
+
+  .prnvs-chevron {
+    @apply text-slate-300 transition-transform duration-300;
+  }
+
+  .prnvs-chevron.open {
+    @apply rotate-180;
+  }
+
+  .prnvs-section-body {
+    @apply border-t border-slate-100;
+  }
+
+  /* badge: 미입력 / 정상 / 비정상 */
+  .prnvs-status-badge {
+    @apply text-[10px] font-semibold px-2 py-0.5 rounded-full;
+  }
+
+  .prnvs-status-badge.normal {
+    @apply bg-emerald-50 text-emerald-600;
+  }
+
+  .prnvs-status-badge.abnormal {
+    @apply bg-red-50 text-red-600;
+  }
+
+  .prnvs-status-badge.empty {
+    @apply bg-slate-50 text-slate-400;
+  }
+
+  /* ── placeholder 섹션 (추후 구현) ── */
+  .prnvs-placeholder {
+    @apply text-xs text-slate-300 italic;
+  }
+
+  /* ═══════════════════════════════════════════
+     V/S 섹션 내부 스타일
+     ═══════════════════════════════════════════ */
+
+  .vs-content {
+    @apply p-4;
+  }
+
+  /* ── 기본 V/S 입력 그리드 ── */
+  .vs-vitals-grid {
+    @apply flex flex-col gap-2.5;
+  }
+
+  .vs-vital-row {
+    @apply flex items-center gap-3;
+  }
+
+  .vs-vital-label {
+    @apply w-8 text-xs font-bold text-slate-700 text-right shrink-0;
+  }
+
+  .vs-bp-inputs {
+    @apply flex items-center gap-1.5 flex-1;
+  }
+
+  .vs-single-input-wrap {
+    @apply flex items-center gap-1.5 flex-1;
+  }
+
+  .vs-vital-input {
+    @apply w-20 px-2.5 py-2 rounded-lg border border-slate-200 text-sm font-medium text-center
+           focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400
+           bg-slate-50 transition-all;
+    -moz-appearance: textfield;
+  }
+
+  .vs-vital-input::-webkit-outer-spin-button,
+  .vs-vital-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .vs-vital-input.out-of-range {
+    @apply border-red-400 bg-red-50/50 text-red-700 ring-1 ring-red-200;
+  }
+
+  .vs-bp-input {
+    @apply w-16;
+  }
+
+  .vs-bp-slash {
+    @apply text-slate-400 font-bold text-sm;
+  }
+
+  .vs-vital-unit {
+    @apply text-[10px] text-slate-400 font-medium shrink-0 w-10;
+  }
+
+  /* ── 조건부 영역 ── */
+  .vs-conditional-wrap {
+    @apply overflow-hidden;
+  }
+
+  .vs-conditional-inner {
+    @apply mt-4 pt-4 border-t border-dashed border-slate-200 flex flex-col gap-4;
+  }
+
+  /* 경고 배지 */
+  .vs-alert-badge {
+    @apply flex items-center gap-2 text-xs font-semibold text-red-600 bg-red-50 px-3 py-2 rounded-lg;
+  }
+
+  .vs-alert-dot {
+    @apply w-2 h-2 rounded-full bg-red-500 animate-pulse shrink-0;
+  }
+
+  /* ── 서브 섹션 ── */
+  .vs-subsection {
+    @apply flex flex-col gap-2;
+  }
+
+  .vs-subsection-title {
+    @apply text-[11px] font-bold text-slate-500 uppercase tracking-wider pb-1 border-b border-slate-100;
+  }
+
+  /* ── 신경학적 검사 ── */
+  .vs-neuro-grid {
+    @apply flex flex-col gap-2.5;
+  }
+
+  .vs-neuro-item {
+    @apply flex items-center gap-3;
+  }
+
+  .vs-field-label {
+    @apply text-xs text-slate-600 font-medium w-14 shrink-0;
+  }
+
+  .vs-field-label-indent {
+    @apply pl-4;
+  }
+
+  .vs-text-input {
+    @apply px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs font-medium
+           focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400
+           bg-slate-50 w-20;
+  }
+
+  .vs-lr-row {
+    @apply flex items-center gap-3;
+  }
+
+  .vs-lr-item {
+    @apply flex items-center gap-1.5;
+  }
+
+  .vs-lr-label {
+    @apply text-[10px] text-slate-500 font-medium;
+  }
+
+  /* ── 토글 버튼 (V/S 전용) ── */
+  .vs-toggle-container {
+    @apply flex rounded-lg overflow-hidden border border-slate-200 shrink-0;
+  }
+
+  .vs-toggle-btn {
+    @apply px-2.5 py-1 text-[10px] font-medium transition-all bg-white text-slate-600
+           hover:bg-slate-100 border-r border-slate-200 last:border-r-0;
+  }
+
+  .vs-toggle-btn.vs-toggle-md {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .vs-toggle-btn.active-default {
+    @apply bg-blue-600 text-white;
+  }
+
+  .vs-toggle-btn.active-abnormal {
+    @apply bg-red-500 text-white font-bold;
+  }
+
+  /* ── 증상 그리드 ── */
+  .vs-symptoms-grid {
+    @apply grid grid-cols-3 gap-2;
+  }
+
+  .vs-symptom-item {
+    @apply flex items-center justify-between gap-1.5 bg-slate-50/80 rounded-lg px-2 py-1.5;
+  }
+
+  .vs-symptom-label {
+    @apply text-xs text-slate-600 font-medium;
+  }
+
+  /* ── 생활습관 ── */
+  .vs-lifestyle-grid {
+    @apply flex flex-col gap-2;
+  }
+
+  .vs-yn-row {
+    @apply flex items-center gap-3;
+  }
+
+  .vs-med-time-wrap {
+    @apply overflow-hidden;
+  }
+
+  .vs-med-time-row {
+    @apply flex items-center gap-3 py-1;
+  }
+
+  .vs-med-time-input {
+    @apply flex-1 max-w-48;
+  }
+}

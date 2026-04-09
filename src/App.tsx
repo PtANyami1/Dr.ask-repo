@@ -10,6 +10,8 @@ import { ExamCard } from './components/exam/ExamCard';
 import { OutputPanel } from './components/exam/OutputPanel';
 import { GuideModal } from './components/common/GuideModal';
 import { InfoPage } from './components/info/InfoPage';
+import { PrnVsPage } from './components/prnvs/PrnVsPage';
+import { useVitalSigns } from './hooks/useVitalSigns';
 
 import './App.css';
 
@@ -33,6 +35,9 @@ export default function App() {
     setGuideInfo
   } = useExamState();
 
+  // V/S 상태 (PrnVs 탭용)
+  const vitalSigns = useVitalSigns();
+
   const toggleCategory = (category: string) => {
     setSelectedCategories(prev => 
       prev.includes(category) 
@@ -47,7 +52,14 @@ export default function App() {
     return EXAM_TEMPLATES.filter(t => selectedCategories.includes(t.category));
   }, [selectedCategories]);
 
-  const outputText = useMemo(() => generateOutput(selectedCategories), [generateOutput, selectedCategories]);
+  const examOutputText = useMemo(() => generateOutput(selectedCategories), [generateOutput, selectedCategories]);
+  const vsOutputText = vitalSigns.generateOutput();
+
+  // 현재 탭에 맞는 출력 텍스트
+  const outputText = useMemo(() => {
+    if (activeTab === 'PrnVs') return vsOutputText;
+    return examOutputText;
+  }, [activeTab, vsOutputText, examOutputText]);
 
   const handleCopy = () => copyToClipboard(outputText);
 
@@ -57,7 +69,15 @@ export default function App() {
 
       {activeTab === 'Info' ? (
         <InfoPage />
-      ) : (
+      ) : activeTab === 'PrnVs' ? (
+        <PrnVsPage
+          vs={vitalSigns.vs}
+          updateField={vitalSigns.updateField}
+          resetAll={vitalSigns.resetAll}
+          rangeStatus={vitalSigns.rangeStatus}
+          hasAnyValue={vitalSigns.hasAnyValue}
+        />
+      ) : activeTab === 'PhysicalExam' ? (
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-0 md:gap-6 p-4 md:p-8 pt-0 md:pt-8">
           <CategorySidebar 
             categories={CATEGORIES}
@@ -108,7 +128,7 @@ export default function App() {
             )}
           </main>
         </div>
-      )}
+      ) : null}
 
       <OutputPanel 
         isPanelOpen={isOutputPanelOpen}
